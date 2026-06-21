@@ -157,6 +157,24 @@ You can also keep it plain, or nudge it any time by saying something like "less 
 
 ---
 
+## 🌐 Using Home Studio anywhere
+
+One Home Studio, the same friendly host and specialists, reachable wherever you talk to Claude. The host greets, routes, and helps the same way everywhere. The surface just decides how much it can do for you.
+
+- **Terminal (Claude Code CLI):** clone this repo and run the setup script, then type `claude`. Full power: it can save your work to GitHub, connect tools, and run real workflows.
+- **Claude Code desktop:** open the Plugins tab, add this repo as a marketplace, and install Home Studio. Same full power in a desktop window.
+- **Chat:** add Home Studio as a plugin or skill, then just talk to it. You get the host and the specialist craft. For anything that needs to run or be saved to your computer, it points you to the terminal or desktop.
+- **Cowork:** install Home Studio the same way, and the host and specialists drive the work in a visual space.
+
+Installing it everywhere is the same one step. Add the marketplace from this repo, then install the plugin.
+
+```
+/plugin marketplace add bishrant-personal/home-studio
+/plugin install home-studio@home-studio
+```
+
+---
+
 ## 🛠️ The technical bits
 
 If you just wanted to know what Home Studio does, you are all set. The sections below are for setting it up and taking it apart, tucked away so they stay out of the way until you need them.
@@ -166,26 +184,32 @@ If you just wanted to know what Home Studio does, you are all set. The sections 
 
 <br>
 
-Clone this repo and run the setup script for your machine. It installs what is needed, skips anything you already have, and starts the studio.
+**The easiest way, one line.** It fetches Home Studio and starts it for you.
+
+On Windows, paste this into PowerShell:
+
+```
+irm https://raw.githubusercontent.com/bishrant-personal/home-studio/main/bootstrap.ps1 | iex
+```
+
+On macOS or Linux, paste this into a terminal:
+
+```
+curl -fsSL https://raw.githubusercontent.com/bishrant-personal/home-studio/main/bootstrap.sh | bash
+```
+
+**Prefer to click?** On Windows, download this repo, then double-click `setup.cmd`. It opens PowerShell for you with the right settings, so you never have to think about it.
+
+**Or do it by hand.** Clone the repo and run the setup script for your machine. It installs what is needed, skips anything you already have, and starts the studio.
 
 ```
 git clone https://github.com/bishrant-personal/home-studio.git home-studio
 cd home-studio
 ```
 
-On Windows:
+Then on Windows run `.\setup.cmd` (or `powershell -ExecutionPolicy Bypass -File .\setup.ps1`), and on macOS or Linux run `./setup.sh`.
 
-```
-powershell -ExecutionPolicy Bypass -File .\setup.ps1
-```
-
-On macOS or Linux:
-
-```
-./setup.sh
-```
-
-To see what is installed without changing anything, add `-CheckOnly` on Windows or `--check` on macOS and Linux.
+To see what is installed without changing anything, add `-CheckOnly` on Windows or `--check` on macOS and Linux. The scripts always run from their own folder, so they work no matter where you start them.
 
 On the first start, Home Studio greets you, signs you into GitHub so your work is always saved, and offers a few simple things to do first.
 

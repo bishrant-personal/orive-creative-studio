@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "home-studio",
+  "displayName": "Home Studio",
+  "description": "A friendly creative studio that runs on Claude Code. Talk in plain words and the right specialist does the work: brand, content, ads, pricing, research, video, copy, and hospitality.",
+  "author": {
+    "name": "Bishrant Tandukar",
+    "url": "https://www.bishrant.com/"
+  },
+  "homepage": "https://github.com/bishrant-personal/home-studio",
+  "repository": "https://github.com/bishrant-personal/home-studio",
+  "keywords": [
+    "creative-studio",
+    "branding",
+    "content-creation",
+    "ads",
+    "pricing",
+    "research",
+    "hospitality",
+    "claude-code",
+    "ai-agents"
+  ],
+  "skills": "./.claude/skills/",
+  "agents": "./.claude/agents/",
+  "commands": "./.claude/commands/",
+  "hooks": "./hooks/hooks.json",
+  "mcpServers": "./.mcp.json"
+}

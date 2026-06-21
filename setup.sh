@@ -9,6 +9,9 @@
 
 set -e
 
+# Always work from the folder this script lives in, no matter where it is run from.
+cd "$(cd "$(dirname "$0")" 2>/dev/null && pwd)" 2>/dev/null || true
+
 CHECK_ONLY="no"
 WITH_DOCKER="no"
 WITH_PYTHON="no"

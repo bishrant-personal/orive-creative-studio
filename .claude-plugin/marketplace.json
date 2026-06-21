@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-marketplace.json",
+  "name": "home-studio",
+  "owner": {
+    "name": "Bishrant Tandukar"
+  },
+  "description": "Home Studio, a friendly creative studio you can install into Claude Code, the desktop app, and Cowork.",
+  "plugins": [
+    {
+      "name": "home-studio",
+      "source": "./",
+      "description": "The host and all the specialists: brand, content, ads, pricing, research, the creative crew, and hospitality, with their skills and the connection wizard.",
+      "category": "creative",
+      "keywords": [
+        "creative-studio",
+        "branding",
+        "content-creation",
+        "hospitality",
+        "claude-code"
+      ]
+    }
+  ]
+}

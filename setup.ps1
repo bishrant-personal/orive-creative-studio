@@ -13,6 +13,15 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+# Always work from the folder this script lives in, no matter where it is run from.
+# This is what fixes the "it cannot find the folder" problem.
+if ($PSScriptRoot) { Set-Location -LiteralPath $PSScriptRoot }
+
+# A friendly nudge if this is a very old Windows PowerShell.
+if ($PSVersionTable.PSVersion.Major -lt 5) {
+  Write-Host "`nYour PowerShell is quite old. If anything fails, install a newer one from aka.ms/powershell, then run me again."
+}
+
 function Say($msg) { Write-Host "`n$msg" }
 function Have($name) { return [bool](Get-Command $name -ErrorAction SilentlyContinue) }
 
@@ -117,6 +126,17 @@ if (Have "magick")      { Say "The image tool is already here." }    else { Wing
 if (Have "pandoc")      { Say "The document maker is already here." } else { Winget-Install "JohnMacFarlane.Pandoc" "the document maker" }
 if (Have "yt-dlp")      { Say "The clip downloader is already here." } else { Winget-Install "yt-dlp.yt-dlp" "the clip downloader" }
 if (Have "wkhtmltopdf") { Say "The PDF maker is already here." }      else { Winget-Install "wkhtmltopdf.wkhtmltox" "the PDF maker" }
+
+# The wkhtmltopdf installer does not add itself to PATH, so do it for them.
+$wkBin = "C:\Program Files\wkhtmltopdf\bin"
+if ((Test-Path $wkBin) -and -not (Have "wkhtmltopdf")) {
+  $up = [System.Environment]::GetEnvironmentVariable("Path","User")
+  if ($up -notlike "*$wkBin*") {
+    $up = if ([string]::IsNullOrEmpty($up)) { $wkBin } else { $up.TrimEnd(';') + ";" + $wkBin }
+    [System.Environment]::SetEnvironmentVariable("Path", $up, "User")
+  }
+  Refresh-Path
+}
 
 # --- optional extras, only when asked ---
 if ($WithDocker) {
