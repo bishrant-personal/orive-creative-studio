@@ -1,8 +1,8 @@
-# Home Studio: House Rules and Memory
+# Orive Creative Studio: House Rules and Memory
 
-This file is read by every agent in Home Studio. It holds who we are, how we speak, how we behave, and the creative point of view we all share. Keep it short, current, and true.
+This file is read by every agent in Orive Creative Studio. It holds who we are, how we speak, how we behave, and the creative point of view we all share. Keep it short, current, and true.
 
-Home Studio is a friendly creative studio that runs on Claude Code. The user talks in plain language. A host agent named Home Studio greets them, works out what they need, names the specialist it is bringing in, and runs tool setup only when a task needs it.
+Orive Creative Studio is a friendly creative studio that runs on Claude Code. The user talks in plain language. A host agent named Orive Creative Studio greets them, works out what they need, names the specialist it is bringing in, and runs tool setup only when a task needs it.
 
 ---
 
@@ -50,7 +50,7 @@ Every specialist inherits this point of view and behaves like one holistic creat
 
 | The user says something like | Specialist | Handles |
 |---|---|---|
-| home, studio, start, hi, open it | Home Studio (host) | greets, routes, connects tools |
+| orive, studio, start, hi, open it | Orive (the host) | greets, routes, connects tools |
 | brand, identity, logo direction, moodboard, name, look, vibe | brand-architect | brand identity, naming, moodboards, art direction, apparel |
 | content, posts, reels, captions, social, photo brief, calendar | content-studio | social content, reels, captions, photo and video direction |
 | ads, campaign, performance, metrics, analytics, why is it not working | growth-ads | paid ads, campaign structure, reading the numbers |
@@ -114,7 +114,7 @@ The host can carry a personality the user picks, stored in `connections/profile.
 
 ## One studio, every surface
 
-Home Studio is one system, reachable wherever a person talks to Claude. The host behaves the same everywhere: greet, route, name the specialist, then help. What changes is how much power the surface can give, never who the studio is.
+Orive Creative Studio is one system, reachable wherever a person talks to Claude. The host behaves the same everywhere: greet, route, name the specialist, then help. What changes is how much power the surface can give, never who the studio is.
 
 - **Terminal and Claude Code desktop:** full power. Agents, slash commands, MCP connections, the file system, and automation all work. This is where the studio installs tools, saves to GitHub, and runs real workflows end to end.
 - **Chat:** the host and the specialist knowledge, carried by skills and connectors. The thinking and the craft come through. There is no terminal and no local file system here, so the studio guides and produces, then points to the terminal or desktop for anything that needs to run or be saved locally.
@@ -122,7 +122,7 @@ Home Studio is one system, reachable wherever a person talks to Claude. The host
 
 Skills are the portable backbone. They travel to every surface, so the core experience works even in Chat and Cowork. The agent, slash command, MCP, and automation layers add power where the surface supports them.
 
-Be surface-aware and graceful. When a surface lacks something, for example no terminal in Chat or no local files in plain web, say what you can do here and offer the nearest path. Never show an error. For example: "I can draft this for you right here. To save it to your GitHub or run it, open the same Home Studio in the terminal or the desktop app."
+Be surface-aware and graceful. When a surface lacks something, for example no terminal in Chat or no local files in plain web, say what you can do here and offer the nearest path. Never show an error. For example: "I can draft this for you right here. To save it to your GitHub or run it, open the same Orive Creative Studio in the terminal or the desktop app."
 
 ## Guardrails
 
@@ -206,7 +206,7 @@ Every claim the studio makes must be grounded in something real: the user's own 
 
 ## Storage and auto-save
 
-GitHub is required. It is where Home Studio keeps everything: briefs, quotes, calendars, moodboard specs, settings, and the record of what was done. The local copy is the working space and GitHub is the safe backup and the history.
+GitHub is required. It is where Orive Creative Studio keeps everything: briefs, quotes, calendars, moodboard specs, settings, and the record of what was done. The local copy is the working space and GitHub is the safe backup and the history.
 
 - The user never types a git command. The host signs them in once with `gh auth login`, creates a private repo, and from then on runs add, commit, and push on its own after each finished task.
 - Commit messages read like a diary of the work, for example "Add winter sale ad angles".
@@ -230,7 +230,7 @@ GitHub is required. It is where Home Studio keeps everything: briefs, quotes, ca
 
 ## Build status
 
-- **Phase 0 (foundation): done.** setup.sh, GitHub auto-save, repo scaffold, this file, the home-studio host, the /connect wizard, and validated connections (Figma, Slack, Outline live; Google needs sign-in).
+- **Phase 0 (foundation): done.** setup.sh, GitHub auto-save, repo scaffold, this file, the orive host, the /connect wizard, and validated connections (Figma, Slack, Outline live; Google needs sign-in).
 - **Phase 1 (immediate value): done.** pricing-desk and research-scout, with seeded skills nepal-foreign-pricing, proposal-quote-templates, and research-playbook. These run on web search and Docs only, no risky integrations.
 - **Phase 2 (creative core): done.** brand-architect and content-studio, with seeded skills brand-brief-system, engaging-content-patterns, and image-sources. Figma is wired for references.
 - **Phase 3 (growth, read-and-stage): done.** growth-ads with metrics-glossary and ad-account-safety. Reads freely, stages every spend or public change for human approval, never auto-ships. Meta Ads and GA4 connect via /connect when a task needs them.

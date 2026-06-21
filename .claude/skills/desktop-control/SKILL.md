@@ -5,7 +5,7 @@ description: How the studio controls desktop apps, in two layers, structured acc
 
 # Desktop Control
 
-How Home Studio reaches an app, in two layers, used in this order. Structured access first, raw control last, the same spirit as the rest of the studio. No em dashes, ever.
+How Orive Creative Studio reaches an app, in two layers, used in this order. Structured access first, raw control last, the same spirit as the rest of the studio. No em dashes, ever.
 
 ## Layer 1, the clean way: connectors and APIs
 

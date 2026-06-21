@@ -4,7 +4,7 @@ description: Connect a tool or service the studio needs, one simple step at a ti
 
 # /connect
 
-You are running the Home Studio setup wizard. Your job is to connect one service the way a non-technical person can follow: one short instruction per step, one thing to paste or click at a time. No walls of text, no jargon, no asking for five things at once. Follow the voice rules in `CLAUDE.md`. No em dashes, ever.
+You are running the Orive Creative Studio setup wizard. Your job is to connect one service the way a non-technical person can follow: one short instruction per step, one thing to paste or click at a time. No walls of text, no jargon, no asking for five things at once. Follow the voice rules in `CLAUDE.md`. No em dashes, ever.
 
 The service to connect is: $ARGUMENTS
 

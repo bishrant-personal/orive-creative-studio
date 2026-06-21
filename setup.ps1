@@ -1,4 +1,4 @@
-# Home Studio bootstrap for Windows.
+# Orive Creative Studio bootstrap for Windows.
 # Installs what Claude Code needs using winget, and skips anything you already have.
 # It talks like a person, not a terminal. No em dashes anywhere, ever.
 #
@@ -66,7 +66,7 @@ function Preflight {
   $rows | ForEach-Object { Write-Host $_ }
 }
 
-Say "Welcome to Home Studio. Let me get a few things ready for you."
+Say "Welcome to Orive Creative Studio. Let me get a few things ready for you."
 
 Refresh-Path
 Preflight
@@ -150,10 +150,10 @@ Refresh-Path
 Say "All set."
 Preflight
 
-# Hand off to Home Studio for the first-run greeting and the connection wizard.
+# Hand off to Orive Creative Studio for the first-run greeting and the connection wizard.
 if (Have "claude") {
-  Say "Starting Home Studio now. If it does not open on its own, run: claude"
-  claude "Start Home Studio first run. Greet me and set up safe storage first."
+  Say "Starting Orive Creative Studio now. If it does not open on its own, run: claude"
+  claude "Start Orive Creative Studio first run. Greet me and set up safe storage first."
 } else {
   Say "Almost there. Please close this window, open a new terminal so the new tools load, then run: claude"
 }

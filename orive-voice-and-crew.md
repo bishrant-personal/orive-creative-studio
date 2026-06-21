@@ -1,12 +1,12 @@
-# Home Studio: Voice, Crew, and Desktop Control
+# Orive Creative Studio: Voice, Crew, and Desktop Control
 
-A companion to `home-studio-build-brief.md`. Four parts: the voice and personality system for the host, the expanded creative crew, when more than one specialist is pulled, and how Home Studio controls desktop apps. The same house rules apply, including no em dashes, ever.
+A companion to `orive-build-brief.md`. Four parts: the voice and personality system for the host, the expanded creative crew, when more than one specialist is pulled, and how Orive Creative Studio controls desktop apps. The same house rules apply, including no em dashes, ever.
 
 ---
 
 ## Part 1: The voice and personality system
 
-Personality is a delivery layer on the host's voice only. It changes how Home Studio says things. It never changes what the specialists produce or how the system thinks. A quote table is still a clean quote table. The personality colors the greetings, the reactions, the way questions are asked, the framing around a handoff, and how news is delivered. Same substance, different mouth. This keeps the work clean and usable while only the wrapper has attitude.
+Personality is a delivery layer on the host's voice only. It changes how Orive Creative Studio says things. It never changes what the specialists produce or how the system thinks. A quote table is still a clean quote table. The personality colors the greetings, the reactions, the way questions are asked, the framing around a handoff, and how news is delivered. Same substance, different mouth. This keeps the work clean and usable while only the wrapper has attitude.
 
 ### The trait palette
 

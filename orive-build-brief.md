@@ -1,14 +1,14 @@
-# Home Studio: Build Brief for Claude Code
+# Orive Creative Studio: Build Brief for Claude Code
 
-Home Studio is a friendly creative studio that runs on Claude Code. You talk to it in plain language and it brings in the right specialist for the job: brand, content, ads, pricing, or research. This document is the source of truth for building it. Hand it to Claude Code and say "build Phase 0 from this brief."
+Orive Creative Studio is a friendly creative studio that runs on Claude Code. You talk to it in plain language and it brings in the right specialist for the job: brand, content, ads, pricing, or research. This document is the source of truth for building it. Hand it to Claude Code and say "build Phase 0 from this brief."
 
 ---
 
 ## 0. What we are building
 
-Home Studio lives in one repository. The owner runs it for themselves and can onboard other people (teammates or clients) into it. The headline experience for any new user is: describe what you want, answer a couple of simple questions, paste a link or a sign-in when asked, and the right specialist does the rest.
+Orive Creative Studio lives in one repository. The owner runs it for themselves and can onboard other people (teammates or clients) into it. The headline experience for any new user is: describe what you want, answer a couple of simple questions, paste a link or a sign-in when asked, and the right specialist does the rest.
 
-The whole system is called **Home Studio**. The agent you talk to is the **host**, also named Home Studio. Inside it are a handful of **specialists**: Brand, Content, Growth, Pricing, Research, and an optional Ops. You never need to remember their real file names. You reach them with everyday words, and the host always tells you which one it brought in.
+The whole system is called **Orive Creative Studio**. The agent you talk to is the **host**, also named Orive Creative Studio. Inside it are a handful of **specialists**: Brand, Content, Growth, Pricing, Research, and an optional Ops. You never need to remember their real file names. You reach them with everyday words, and the host always tells you which one it brought in.
 
 The system is built from four layers of Claude Code primitives:
 
@@ -23,7 +23,7 @@ Plus `CLAUDE.md` for project memory and house rules.
 
 | Layer | Piece | What it does |
 |---|---|---|
-| Front door | Home Studio (host) | Greets you, works out what you need, brings in a specialist, and runs tool setup |
+| Front door | Orive Creative Studio (host) | Greets you, works out what you need, brings in a specialist, and runs tool setup |
 | Specialists | Brand, Content, Growth, Pricing, Research, Ops | Each does one kind of work well |
 | Knowledge | Skills | The taste, rules, and know-how each specialist reads from |
 | Connections | MCP layer | The links to GitHub, Figma, Google, Meta, analytics, and the rest |
@@ -40,7 +40,7 @@ Each agent below is one file at `.claude/agents/<name>.md`. The frontmatter is `
 
 | You say something like | Specialist | What it handles |
 |---|---|---|
-| home, studio, start, hi, or just open it | Home Studio (host) | greets, routes, connects your tools |
+| home, studio, start, hi, or just open it | Orive Creative Studio (host) | greets, routes, connects your tools |
 | brand, identity, logo direction, moodboard, name, look, vibe | Brand | brand identity, naming, moodboards, art direction, apparel concepts |
 | content, posts, reels, captions, social, photo brief, calendar | Content | social content, reels, captions, photo and video direction |
 | ads, campaign, performance, metrics, analytics, why is it not working | Growth | paid ads, campaign structure, reading the numbers |
@@ -68,7 +68,7 @@ The host announces the choice every time, for example: Got it, I'll bring in Pri
 
 ## 7. Build sequence
 
-- **Phase 0 (foundation):** the `setup.sh` bootstrap; GitHub sign-in, private repo, and auto-save; the repo scaffold; `CLAUDE.md`; the `home-studio` host with first-run welcome, access map, and voice rules; and the `/connect` wizard with the connections registry and profile.
+- **Phase 0 (foundation):** the `setup.sh` bootstrap; GitHub sign-in, private repo, and auto-save; the repo scaffold; `CLAUDE.md`; the `orive` host with first-run welcome, access map, and voice rules; and the `/connect` wizard with the connections registry and profile.
 - **Phase 1 (immediate value):** `pricing-desk` plus `research-scout`, with their seeded skills.
 - **Phase 2 (creative core):** `brand-architect` and `content-studio` with `brand-brief-system` and `engaging-content-patterns`.
 - **Phase 3 (growth, read-only first):** `growth-ads` with `metrics-glossary` and `ad-account-safety`.

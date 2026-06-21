@@ -1,14 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
-  "name": "home-studio",
-  "displayName": "Home Studio",
+  "name": "orive-creative-studio",
+  "displayName": "Orive Creative Studio",
   "description": "A friendly creative studio that runs on Claude Code. Talk in plain words and the right specialist does the work: brand, content, ads, pricing, research, video, copy, and hospitality.",
   "author": {
     "name": "Bishrant Tandukar",
     "url": "https://www.bishrant.com/"
   },
-  "homepage": "https://github.com/bishrant-personal/home-studio",
-  "repository": "https://github.com/bishrant-personal/home-studio",
+  "homepage": "https://github.com/bishrant-personal/orive-creative-studio",
+  "repository": "https://github.com/bishrant-personal/orive-creative-studio",
   "keywords": [
     "creative-studio",
     "branding",

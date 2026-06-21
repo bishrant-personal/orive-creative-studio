@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Home Studio bootstrap for macOS and Linux.
+# Orive Creative Studio bootstrap for macOS and Linux.
 # Installs what Claude Code needs, and skips anything you already have.
 # It talks like a person, not a terminal. Plain progress lines, no raw logs.
 # No em dashes anywhere, ever.
@@ -73,7 +73,7 @@ preflight() {
   fi
 }
 
-say "Welcome to Home Studio. Let me get a few things ready for you."
+say "Welcome to Orive Creative Studio. Let me get a few things ready for you."
 preflight
 
 if [ "$CHECK_ONLY" = "yes" ]; then
@@ -146,10 +146,10 @@ fi
 say "All set."
 preflight
 
-# Hand off to Home Studio for the first-run greeting and the connection wizard.
+# Hand off to Orive Creative Studio for the first-run greeting and the connection wizard.
 if have claude; then
-  say "Starting Home Studio now. If it does not open on its own, run: claude"
-  claude "Start Home Studio first run. Greet me and set up safe storage first."
+  say "Starting Orive Creative Studio now. If it does not open on its own, run: claude"
+  claude "Start Orive Creative Studio first run. Greet me and set up safe storage first."
 else
   say "Almost there. Please open a new terminal so the new tools load, then run: claude"
 fi

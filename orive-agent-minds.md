@@ -1,6 +1,6 @@
-# Home Studio: The Agent Minds
+# Orive Creative Studio: The Agent Minds
 
-A companion to `home-studio-build-brief.md` and `home-studio-voice-and-crew.md`. It gives each agent a real professional mind, not just a job description.
+A companion to `orive-build-brief.md` and `orive-voice-and-crew.md`. It gives each agent a real professional mind, not just a job description.
 
 The gap this fills: an agent that only knows what it makes is generic. A real professional knows why the work exists, what to look at, which frameworks to think with, how to research, and how to give feedback in its own voice. A cinematographer and a copywriter look at the same project and notice completely different things. That difference is the value.
 
@@ -41,4 +41,4 @@ Put one thing in front of the studio and the right minds each read it their own 
 - When two minds conflict, surface the tension to the person as a real creative decision rather than hiding it.
 - Keep feedback grounded in the framework, not taste alone. "It feels off" is not enough.
 
-The Hotel specialist carries its own knowledge base and idea patterns in `home-studio-hospitality.md` and the `hospitality-knowledge` skill.
+The Hotel specialist carries its own knowledge base and idea patterns in `orive-hospitality.md` and the `hospitality-knowledge` skill.

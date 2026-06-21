@@ -1,6 +1,6 @@
-# What Home Studio needs to run
+# What Orive Creative Studio needs to run
 
-This is the full list of software Home Studio depends on, and what installs it. You do not have to read this. The setup scripts install everything for you and skip anything you already have. This file is here so the list is honest and visible. No em dashes, ever.
+This is the full list of software Orive Creative Studio depends on, and what installs it. You do not have to read this. The setup scripts install everything for you and skip anything you already have. This file is here so the list is honest and visible. No em dashes, ever.
 
 ## Required
 
