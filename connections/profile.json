@@ -3,9 +3,12 @@
   "note": "The user's name and basic preferences for the greeting. Set on first run.",
   "name": null,
   "preferences": {
-    "voice": "studio",
     "primary_market": null,
     "default_currency": null
   },
+  "voice_preset": null,
+  "voice_lead": null,
+  "voice_support": null,
+  "voice_accent": null,
   "first_run_complete": false
 }

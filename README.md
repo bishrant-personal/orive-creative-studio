@@ -20,6 +20,8 @@ Home Studio handles five kinds of creative work, and each one has a specialist w
 
 You do not need to remember any names or commands. You can also just type what you want in your own words, and the host will work out who to bring in.
 
+Behind those five sit a full creative crew: a videographer, a cinematographer, a concept artist, a set designer, a copywriter, and a UX writer, plus a hospitality specialist for hotels and tourism. The host brings in whoever fits, and when a job needs more than one, it runs a small crew for you and keeps it all in one voice.
+
 ---
 
 ## 💬 How it works when you type a prompt
@@ -139,6 +141,19 @@ Every specialist shares one creative point of view, so the brand, the content, a
 - Offer a view, not a lecture, so you get a few clear options with a reason for each, and you decide.
 
 And one rule it never breaks anywhere: it never uses an em dash. It writes in warm, simple, naturally flowing sentences instead.
+
+---
+
+## 🎭 Give it a personality
+
+If you like, you can choose how the studio talks to you. Pick a vibe and it keeps that tone while the work itself stays clean and professional.
+
+- **The Director**, a fearless creative lead who just tells you the answer.
+- **The Sage**, calm and wise, the one who makes you think.
+- **The Bestie**, warm and funny, always on your side.
+- **Straight Shooter**, no nonsense, but it teaches as it goes.
+
+You can also keep it plain, or nudge it any time by saying something like "less sass today." Whatever you pick, it never gives you worse help to stay in character.
 
 ---
 
