@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "note": "Which services are connected, their scope, and when last validated. The /connect wizard reads and writes this so it never re-asks for something already connected.",
+  "services": {
+    "github": {
+      "connected": false,
+      "method": "gh CLI sign-in plus official GitHub MCP for reading",
+      "scope": "push to the user's private work repo, read repos and issues",
+      "required": true,
+      "last_validated": null
+    },
+    "google": {
+      "connected": false,
+      "method": "Google MCP via OAuth (Drive, Docs, Calendar, Gmail)",
+      "scope": "read and write docs, file outputs, schedule",
+      "required": false,
+      "last_validated": null
+    },
+    "figma": {
+      "connected": false,
+      "method": "Figma MCP",
+      "scope": "read references and tokens from files the user names",
+      "required": false,
+      "last_validated": null
+    },
+    "slack": {
+      "connected": false,
+      "method": "Slack MCP",
+      "scope": "post updates, read channels the user names",
+      "required": false,
+      "last_validated": null
+    },
+    "outline": {
+      "connected": false,
+      "method": "Outline MCP",
+      "scope": "read and write team docs",
+      "required": false,
+      "last_validated": null
+    },
+    "pexels": {
+      "connected": false,
+      "method": "API key in local env as PEXELS_API_KEY",
+      "scope": "search free stock images and video",
+      "required": false,
+      "last_validated": null
+    },
+    "meta_ads": {
+      "connected": false,
+      "method": "Official Meta Ads MCP via OAuth",
+      "scope": "read-and-stage only by default",
+      "required": false,
+      "last_validated": null
+    },
+    "ga4": {
+      "connected": false,
+      "method": "Official Google GA4 MCP or hosted bridge",
+      "scope": "read analytics",
+      "required": false,
+      "last_validated": null
+    }
+  }
+}

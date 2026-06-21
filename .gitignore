@@ -1,0 +1,25 @@
+# Secrets: never commit real keys. The env file holds them locally only.
+.env
+.env.local
+*.local.env
+
+# Service account and credential files
+*service-account*.json
+*credentials*.json
+gha-creds-*.json
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Node and tooling
+node_modules/
+npm-debug.log*
+.cache/
+
+# Generated working files we do not want in history
+outputs/**/tmp/
+*.tmp

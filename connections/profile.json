@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "note": "The user's name and basic preferences for the greeting. Set on first run.",
+  "name": null,
+  "preferences": {
+    "voice": "studio",
+    "primary_market": null,
+    "default_currency": null
+  },
+  "first_run_complete": false
+}
