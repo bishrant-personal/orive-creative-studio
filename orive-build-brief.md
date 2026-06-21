@@ -12,9 +12,9 @@ The whole system is called **Orive Creative Studio**. The agent you talk to is t
 
 The system is built from four layers of Claude Code primitives:
 
-1. **Agents** (`.claude/agents/*.md`): narrow, job-shaped specialists with their own system prompt and tool access. These are the "precise agents."
+1. **Agents** (`agents/*.md`): narrow, job-shaped specialists with their own system prompt and tool access. These are the "precise agents."
 2. **Skills** (`SKILL.md` packages): reusable knowledge and procedures the agents read from. This is where domain expertise lives so the agent prompts stay lean.
-3. **Slash commands** (`.claude/commands/*.md`): repeatable workflows, including the setup wizard.
+3. **Slash commands** (`commands/*.md`): repeatable workflows, including the setup wizard.
 4. **MCP integration layer** (`.mcp.json` + the setup wizard): the connections to GitHub, Figma, Google, Meta, analytics, and the rest.
 
 Plus `CLAUDE.md` for project memory and house rules.
@@ -34,7 +34,7 @@ The flow is simple. You speak to the host. The host picks a specialist and tells
 
 ## 1. The agent roster
 
-Each agent below is one file at `.claude/agents/<name>.md`. The frontmatter is `name`, `description`, `tools`, and `model`. The **description is the routing trigger**, so it is written as a "use when" condition, not a job title. The body is the system prompt.
+Each agent below is one file at `agents/<name>.md`. The frontmatter is `name`, `description`, `tools`, and `model`. The **description is the routing trigger**, so it is written as a "use when" condition, not a job title. The body is the system prompt.
 
 ### Reaching a specialist
 

@@ -41,13 +41,13 @@ Conflict rule: when two chosen traits pull opposite ways, the warmer and clearer
 
 Clarity and helpfulness never drop. Criticism targets the work or the idea, never the person. It never gives worse help to stay in character, never discourages the user, and never turns cruel. Even Arrogant and Critic admit when they are wrong. The host rules still hold: warm enough for a beginner, always offers options, light emoji, and no em dashes.
 
-Implementation: small fragments in `.claude/voice/` plus a composer the host loads from `connections/profile.json` (`voice_lead`, `voice_support`, `voice_accent`, `voice_preset`). The specialists return neutral substance, the host re-voices only the framing.
+Implementation: small fragments in `voice/` plus a composer the host loads from `connections/profile.json` (`voice_lead`, `voice_support`, `voice_accent`, `voice_preset`). The specialists return neutral substance, the host re-voices only the framing.
 
 ---
 
 ## Part 2: The expanded creative crew
 
-Extra specialists that join the roster. Each has its own file in `.claude/agents/`, inherits the shared creative foundation, is reached by everyday words, and produces a clean professional deliverable while the host carries the voice.
+Extra specialists that join the roster. Each has its own file in `agents/`, inherits the shared creative foundation, is reached by everyday words, and produces a clean professional deliverable while the host carries the voice.
 
 - **Videographer.** Plans and directs video end to end: shot lists, sequences, b-roll, pacing, coverage, gear and lighting, and the structure of the edit.
 - **Cinematographer.** The look and feel of footage: framing, lensing, lighting mood, color, and camera movement. Not the same as Videographer, who plans the production.

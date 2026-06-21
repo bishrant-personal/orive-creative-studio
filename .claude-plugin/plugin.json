@@ -19,24 +19,5 @@
     "hospitality",
     "claude-code",
     "ai-agents"
-  ],
-  "skills": ["./.claude/skills"],
-  "agents": [
-    "./.claude/agents/orive.md",
-    "./.claude/agents/brand-architect.md",
-    "./.claude/agents/content-studio.md",
-    "./.claude/agents/growth-ads.md",
-    "./.claude/agents/pricing-desk.md",
-    "./.claude/agents/research-scout.md",
-    "./.claude/agents/studio-ops.md",
-    "./.claude/agents/videographer.md",
-    "./.claude/agents/cinematographer.md",
-    "./.claude/agents/concept-artist.md",
-    "./.claude/agents/set-designer.md",
-    "./.claude/agents/copywriter.md",
-    "./.claude/agents/ux-writer.md",
-    "./.claude/agents/hospitality.md",
-    "./.claude/agents/fashion.md"
-  ],
-  "commands": ["./.claude/commands"]
+  ]
 }

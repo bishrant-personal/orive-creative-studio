@@ -149,6 +149,15 @@ if (Have "uv") { Say "The MCP runner (uv) is already here." } else { Winget-Inst
 Say "Setting up the studio fonts."
 try { & (Join-Path $PSScriptRoot "scripts\install-fonts.ps1") } catch { Say "Fonts will finish later. You can run scripts\install-fonts.ps1 anytime." }
 
+# --- add the studio to Claude Code as a plugin, so it works in any folder ---
+if (Have "claude") {
+  Say "Adding the studio to Claude Code."
+  try {
+    claude plugin marketplace add bishrant-personal/orive-creative-studio | Out-Null
+    claude plugin install orive-creative-studio@orive | Out-Null
+  } catch { Say "If the studio does not appear, run: claude plugin install orive-creative-studio@orive" }
+}
+
 # --- optional extras, only when asked ---
 if ($WithDocker) {
   if (Have "docker") { Say "Docker is already here." } else { Winget-Install "Docker.DockerDesktop" "Docker Desktop" }

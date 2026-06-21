@@ -153,6 +153,13 @@ fi
 say "Setting up the studio fonts."
 bash scripts/install-fonts.sh || say "Fonts will finish later. You can run scripts/install-fonts.sh anytime."
 
+# --- add the studio to Claude Code as a plugin, so it works in any folder ---
+if have claude; then
+  say "Adding the studio to Claude Code."
+  claude plugin marketplace add bishrant-personal/orive-creative-studio >/dev/null 2>&1 || true
+  claude plugin install orive-creative-studio@orive >/dev/null 2>&1 || say "If the studio does not appear, run: claude plugin install orive-creative-studio@orive"
+fi
+
 # --- optional extras, only when asked ---
 if [ "$WITH_DOCKER" = "yes" ]; then
   if have docker; then say "Docker is already here."; else say "Installing Docker."; { [ "$OS" = "mac" ] && brew install --cask docker; } || pm_install docker.io || say "Please install Docker Desktop from docker.com."; fi

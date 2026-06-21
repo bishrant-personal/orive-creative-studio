@@ -8,8 +8,8 @@ The knowledge is built from real properties and real guest reviews, not opinion.
 
 To keep the repo tidy and avoid duplication, the full content is implemented in two files rather than repeated here:
 
-- **The specialist:** `.claude/agents/hospitality.md`. Reached by everyday words (hotel, resort, stay, getaway, tourism, package, banquet, MICE, wedding venue, safari stay). The host announces it and carries the chosen voice. It grounds every claim in research and reviews and never invents a feature.
-- **The knowledge base:** `.claude/skills/hospitality-knowledge/SKILL.md`. What guests in Nepal actually value, the Soaltee portfolio, the competitive map by city, the segments and how to message each, design patterns borrowed from the world's hotel brands, the idea-generation method, the 2026 trend patterns, and the full online and offline deliverable menu.
+- **The specialist:** `agents/hospitality.md`. Reached by everyday words (hotel, resort, stay, getaway, tourism, package, banquet, MICE, wedding venue, safari stay). The host announces it and carries the chosen voice. It grounds every claim in research and reviews and never invents a feature.
+- **The knowledge base:** `skills/hospitality-knowledge/SKILL.md`. What guests in Nepal actually value, the Soaltee portfolio, the competitive map by city, the segments and how to message each, design patterns borrowed from the world's hotel brands, the idea-generation method, the 2026 trend patterns, and the full online and offline deliverable menu.
 
 ## How it fits Orive Creative Studio
 

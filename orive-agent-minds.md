@@ -4,7 +4,7 @@ A companion to `orive-build-brief.md` and `orive-voice-and-crew.md`. It gives ea
 
 The gap this fills: an agent that only knows what it makes is generic. A real professional knows why the work exists, what to look at, which frameworks to think with, how to research, and how to give feedback in its own voice. A cinematographer and a copywriter look at the same project and notice completely different things. That difference is the value.
 
-Each mind has six parts: why it exists, how it sees, the knowledge base it draws on, how it researches, how it gives feedback, and the questions it asks of any work. The frameworks named are real, established craft, not invented. The full minds live in each agent file in `.claude/agents/`, so each agent inherits its own way of thinking. The cross-cutting orchestration lives in `CLAUDE.md`.
+Each mind has six parts: why it exists, how it sees, the knowledge base it draws on, how it researches, how it gives feedback, and the questions it asks of any work. The frameworks named are real, established craft, not invented. The full minds live in each agent file in `agents/`, so each agent inherits its own way of thinking. The cross-cutting orchestration lives in `CLAUDE.md`.
 
 ## Same artifact, different minds
 
