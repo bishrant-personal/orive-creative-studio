@@ -3,39 +3,44 @@
   "note": "Which services are connected, their scope, and when last validated. The /connect wizard reads and writes this so it never re-asks for something already connected.",
   "services": {
     "github": {
-      "connected": false,
+      "connected": true,
       "method": "gh CLI sign-in plus official GitHub MCP for reading",
-      "scope": "push to the user's private work repo, read repos and issues",
+      "scope": "push to the user's work repo, read repos and issues",
       "required": true,
-      "last_validated": null
+      "last_validated": "2026-06-21",
+      "detail": "Signed in as bishrant-personal. Repo bishrant-personal/home-studio created and pushed."
     },
     "google": {
       "connected": false,
       "method": "Google MCP via OAuth (Drive, Docs, Calendar, Gmail)",
       "scope": "read and write docs, file outputs, schedule",
       "required": false,
-      "last_validated": null
+      "last_validated": null,
+      "detail": "Needs sign-in in this session. Run /connect google to start the OAuth flow."
     },
     "figma": {
-      "connected": false,
+      "connected": true,
       "method": "Figma MCP",
       "scope": "read references and tokens from files the user names",
       "required": false,
-      "last_validated": null
+      "last_validated": "2026-06-21",
+      "detail": "Validated with whoami. Signed in as Bishrant (btandukar@omnesoft.com)."
     },
     "slack": {
-      "connected": false,
+      "connected": true,
       "method": "Slack MCP",
       "scope": "post updates, read channels the user names",
       "required": false,
-      "last_validated": null
+      "last_validated": "2026-06-21",
+      "detail": "Validated with a channel search. Workspace reachable."
     },
     "outline": {
-      "connected": false,
+      "connected": true,
       "method": "Outline MCP",
       "scope": "read and write team docs",
       "required": false,
-      "last_validated": null
+      "last_validated": "2026-06-21",
+      "detail": "Validated by listing collections at docs.omnesoft.com."
     },
     "pexels": {
       "connected": false,
