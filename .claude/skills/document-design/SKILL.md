@@ -28,10 +28,20 @@ A document is a first impression. Anything the studio hands over, a quote, a pro
 
 ## The render path
 
-The studio installs `pandoc` and `wkhtmltopdf` (see `REQUIREMENTS.md`). The reliable way to a designed PDF is to write clean HTML or markdown, style it with a small CSS, and render with pandoc.
+The studio installs `pandoc` and `wkhtmltopdf` (see `REQUIREMENTS.md`). The reliable way to a designed PDF is two steps: turn the markdown into a standalone, styled HTML, then render that HTML to PDF. Do this from a writable folder such as `outputs/` or the client folder, never a read-only location, or the PDF step fails on a temp-file permission error.
 
 ```
-pandoc input.md -o output.pdf --pdf-engine=wkhtmltopdf --css=styles.css -V margin-top=20 -V margin-bottom=20
+# Step 1: markdown to a standalone, styled HTML
+pandoc input.md -o output.html --standalone --css styles.css
+
+# Step 2: HTML to PDF. The flag lets wkhtmltopdf load the local CSS and images.
+wkhtmltopdf --enable-local-file-access output.html output.pdf
+```
+
+Avoid the one-step `pandoc --pdf-engine=wkhtmltopdf`, it skips the local-file-access flag and can fail when the working folder is not writable. For an editable handover instead of a PDF, pandoc goes straight to Word with no engine needed:
+
+```
+pandoc input.md -o output.docx
 ```
 
 A safe base `styles.css` to adapt per brand:
