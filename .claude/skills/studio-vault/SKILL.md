@@ -31,6 +31,7 @@ orive-vault/
   connections/
     status.json                           # mirrored from the main repo
     install-log.json                      # what was installed, when, outcome
+  index.json                              # a searchable index of past work, for recall
 ```
 
 ## Startup read
@@ -54,7 +55,7 @@ At the end of each session, or when the user says "save this", write a session f
 - Which tools were used
 - Any decisions, preferences, or corrections the user made
 
-Keep it concise. A useful summary, not a transcript.
+Keep it concise. A useful summary, not a transcript. Then append an index entry (see Recall) so this session and anything notable in it can be found again months later.
 
 ## MCP interchange log
 
@@ -102,10 +103,38 @@ Over time, read past sessions and the MCP log and update the pattern files. Patt
 
 For example: "Last time you preferred PAS for hotel captions, want that again?" or "Your usual pipeline for ad video is Higgsfield then DaVinci, want me to set that up?"
 
+## Recall, bringing back past work
+
+The vault is not just a log, it is a memory the user can reach into months later. When the user refers to something from the past, recall it, do not make them go find it.
+
+**The index.** Keep a searchable index at `index.json`, an array of entries, one per noteworthy thing the studio produced or decided. Append to it whenever you write a session, save a recipe, or produce a quote, proposal, invoice, concept, idea, plan, query, or brief. Each entry:
+
+- `date`, when it happened
+- `type`, one of session, quote, proposal, invoice, concept, idea, plan, query, recipe, brief
+- `title`, a short human name
+- `client`, the client or project, if any
+- `tags` and `keywords`, for matching
+- `summary`, one or two lines so recall can answer without opening the file
+- `path`, where the full thing lives, in the vault or in the work repo under clients or outputs
+
+**When to recall.** Watch for past-reference cues: "remember", "last time", "a few months ago", "that quote for", "the concept we", "what did we decide", "reopen", "continue", "reuse". When you see one, recall before you answer.
+
+**How to recall.**
+
+1. Work out what they want: the topic keywords, the type (quote, proposal, concept, plan), the client, and any rough time ("a few months ago" becomes a date window).
+2. Search `index.json` by keyword, tag, title, client, and type, filter by the date window if there is one, and rank by relevance then recency.
+3. If the index is thin or missing, fall back to scanning the `sessions/`, `recipes/`, and `patterns/client-briefs/` files by keyword.
+4. Surface the best one to three matches, each with its date, type, title, and one-line summary, then offer a useful next step: reopen it, reuse it, replay it for a recipe, or continue from it. Open the full file from `path` only for the one the user picks.
+5. If nothing matches, say so plainly and offer to search wider or start fresh. Never invent a memory that was not logged.
+
+For example: "I found two things from around then. A US SaaS landing page quote from April, three tiers starting at 3200 USD, and a streetwear concept built on Dhaka diamonds. Want me to reopen the quote, reuse it for a new client, or pull up the concept?"
+
+Recall reads summaries first and opens a full file only when needed, so it stays fast even with months of history. It is grounded in the index and the logged files, so it never guesses at a memory.
+
 ## Privacy and control
 
 - The vault is local only, never pushed to a remote unless the user asks.
-- The user can delete any session, log, recipe, or pattern file, and the system respects that silently.
+- The user can delete any session, log, recipe, or pattern file, and the system respects that silently. When something is deleted or forgotten, remove its entry from `index.json` too, so recall never points at a file that is gone.
 - No raw conversation transcripts, only structured summaries.
 - MCP logs record tool names and short summaries, never full payloads, file contents, or credentials.
 - MCP OAuth tokens are managed by the client, never stored in the vault.

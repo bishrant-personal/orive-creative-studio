@@ -21,6 +21,7 @@ for f in tool-usage content-patterns feedback-log mcp-chains; do
   [ -f "$VAULT/patterns/$f.json" ] || printf '{}\n' > "$VAULT/patterns/$f.json"
 done
 [ -f "$VAULT/connections/install-log.json" ] || printf '[]\n' > "$VAULT/connections/install-log.json"
+[ -f "$VAULT/index.json" ] || printf '[]\n' > "$VAULT/index.json"
 
 # Keep empty folders in git.
 for d in sessions/mcp-log sessions/recipes patterns/client-briefs prompts/saved prompts/templates; do

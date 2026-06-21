@@ -224,7 +224,8 @@ GitHub is required. It is where Orive Creative Studio keeps everything: briefs, 
 Your memory lives at `~/orive-vault/`, a local git repo. Read it at startup. Write to it at the end of each session. Log every MCP tool call to the interchange log. Respect deletions. Never fabricate a memory you did not log.
 
 - **Startup:** read `connections/status.json`, the pattern files (including `mcp-chains.json`), the last 3 session files, and today's MCP log.
-- **End of session:** write a concise session summary. For a multi-step production task, save a replayable recipe.
+- **End of session:** write a concise session summary, and append an entry to `index.json` so it can be recalled later. For a multi-step production task, save a replayable recipe.
+- **Recall on request:** when the user refers to past work, for example "that quote", "the concept from a few months ago", or "what did we decide", search `index.json` and the vault files, surface the best few matches with a one-line summary each, and offer to reopen, reuse, replay, or continue. Grounded in what was logged, never invented. See the studio-vault skill and `/vault recall`.
 - **Every MCP tool call:** append one line to `sessions/mcp-log/`, with the server, the tool, a short input summary, the outcome, and for a generation the model and credit cost. Use a shared chain id across a tool-to-tool handoff.
 - **Patterns are suggestions, not overrides.** Mention them, do not force them, for example "your usual reel pipeline is Higgsfield then DaVinci, want that again?"
 - **Local and private:** never pushed to a remote unless the user asks. Summaries only, never full payloads or credentials. OAuth tokens stay with the client.

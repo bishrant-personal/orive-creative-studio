@@ -22,6 +22,8 @@ foreach ($f in @("tool-usage","content-patterns","feedback-log","mcp-chains")) {
 }
 $il = Join-Path $vault "connections\install-log.json"
 if (-not (Test-Path $il)) { Set-Content -Path $il -Value "[]" -Encoding utf8 }
+$idx = Join-Path $vault "index.json"
+if (-not (Test-Path $idx)) { Set-Content -Path $idx -Value "[]" -Encoding utf8 }
 
 foreach ($d in @("sessions\mcp-log","sessions\recipes","patterns\client-briefs","prompts\saved","prompts\templates")) {
   $k = Join-Path $vault "$d\.gitkeep"

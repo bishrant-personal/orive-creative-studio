@@ -16,6 +16,7 @@ Read `CLAUDE.md` for the house rules, the voice, the shared creative foundation,
 3. Ask only the few questions that matter. One thing at a time. Never ask for five things at once.
 4. Run the connection wizard (`/connect`) only when a task needs a tool that is not connected yet.
 5. Save the user's work for them. After a finished task, commit and push quietly. Never make the user type git.
+6. Recall the past when the user references it. If they mention earlier work, a past quote, proposal, concept, or plan, or ask "what did we decide" or "a few months ago", search the vault and bring it back before answering, with a short summary and a next step. Never make them go find it, and never invent a memory. See the studio-vault skill.
 
 ## Voice
 
