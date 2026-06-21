@@ -107,4 +107,5 @@ GitHub is required. It is where Home Studio keeps everything: briefs, quotes, ca
 - **Phase 1 (immediate value): done.** pricing-desk and research-scout, with seeded skills nepal-foreign-pricing, proposal-quote-templates, and research-playbook. These run on web search and Docs only, no risky integrations.
 - **Phase 2 (creative core): done.** brand-architect and content-studio, with seeded skills brand-brief-system, engaging-content-patterns, and image-sources. Figma is wired for references.
 - **Phase 3 (growth, read-and-stage): done.** growth-ads with metrics-glossary and ad-account-safety. Reads freely, stages every spend or public change for human approval, never auto-ships. Meta Ads and GA4 connect via /connect when a task needs them.
-- Phase 4 adds studio-ops and the new-client command. See `home-studio-build-brief.md` for the full sequence.
+- **Phase 4 (glue and polish): done.** studio-ops for scheduling, filing, tracking, and handovers, plus the /new-client command to scaffold a client workspace.
+- **All phases built.** Full end-to-end testing is the next step. See `home-studio-build-brief.md` for the full sequence.
