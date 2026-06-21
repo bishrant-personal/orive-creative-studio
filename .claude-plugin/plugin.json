@@ -38,7 +38,5 @@
     "./.claude/agents/hospitality.md",
     "./.claude/agents/fashion.md"
   ],
-  "commands": ["./.claude/commands"],
-  "hooks": "./hooks/hooks.json",
-  "mcpServers": "./.mcp.json"
+  "commands": ["./.claude/commands"]
 }
