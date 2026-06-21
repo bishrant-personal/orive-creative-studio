@@ -12,36 +12,15 @@ Think of it like walking into a small studio where a warm host greets you at the
 
 ## Contents
 
-1. [Before you start](#-before-you-start-two-free-apps)
-2. [What it can do](#-what-it-can-do)
-3. [Everything you get](#-everything-you-get)
-4. [How it works](#-how-it-works)
-5. [Try saying](#-try-saying)
-6. [Make it yours](#-make-it-yours)
-7. [Good to know](#-good-to-know)
-8. [Use it anywhere](#-use-it-anywhere)
-9. [Get started](#-get-started)
-10. [The technical bits](#-the-technical-bits)
-
----
-
-## ✅ Before you start (two free apps)
-
-Orive Creative Studio runs inside Claude Code, so you set up two free things by hand first. Both take a couple of minutes, and that is the only manual part. Everything else, the studio installs for you.
-
-**1. Claude, the desktop app.** This is where the studio lives and talks to you. Think of it as the building the studio sits inside. Get it free here: https://claude.ai/download
-
-**2. A terminal, your way in.** A terminal is just a small window where you paste one line to begin. Pick whichever one of these free apps you like, you only need one.
-
-| App | Good for | Works on | Link |
-|---|---|---|---|
-| Warp | a modern, friendly terminal, easy for beginners | Windows, macOS, Linux | https://www.warp.dev/ |
-| Ghostty | fast and clean, very simple | macOS, Linux | https://ghostty.org/ |
-| VS Code | a terminal plus a place to see your files | Windows, macOS, Linux | https://code.visualstudio.com/ |
-
----
-
-That is the whole manual setup. The one command further down installs the rest, Claude Code, the browser and creative tools, the fonts, and the studio itself, then it greets you. Keep going, the good part is just below. 👇
+1. [What it can do](#-what-it-can-do)
+2. [Everything you get](#-everything-you-get)
+3. [How it works](#-how-it-works)
+4. [Try saying](#-try-saying)
+5. [Make it yours](#-make-it-yours)
+6. [Good to know](#-good-to-know)
+7. [Use it anywhere](#-use-it-anywhere)
+8. [Get started](#-get-started) (start here)
+9. [The technical bits](#-the-technical-bits)
 
 ---
 
@@ -193,7 +172,21 @@ Install it the same way everywhere: add the marketplace, then install.
 
 ## 🚀 Get started
 
-**The easiest way, one line.** This single command installs everything for you, Claude Code, the browser tool, the creative tools, and the studio fonts, then it starts the studio and greets you. Nothing else to set up.
+**First, two free apps (the only manual step).** Orive Creative Studio runs inside Claude Code, so set these up by hand first. Both take a couple of minutes. Everything else, the studio installs for you.
+
+**1. Claude, the desktop app.** Where the studio lives and talks to you. Think of it as the building the studio sits inside. Get it free here: https://claude.ai/download
+
+**2. A terminal, your way in.** A small window where you paste one line to begin. Pick whichever one you like, you only need one.
+
+| App | Good for | Works on | Link |
+|---|---|---|---|
+| Warp | a modern, friendly terminal, easy for beginners | Windows, macOS, Linux | https://www.warp.dev/ |
+| Ghostty | fast and clean, very simple | macOS, Linux | https://ghostty.org/ |
+| VS Code | a terminal plus a place to see your files | Windows, macOS, Linux | https://code.visualstudio.com/ |
+
+---
+
+**Then run one line.** This single command installs the rest for you, Claude Code, the browser tool, the creative tools, and the studio fonts, then it starts the studio and greets you. Nothing else to set up.
 
 On Windows, in PowerShell:
 

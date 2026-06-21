@@ -15,6 +15,8 @@ Handle these:
 | `/vault show` | List recent sessions, newest first, with date and topic |
 | `/vault recall [topic]` | Bring back past work that matches: quotes, proposals, invoices, concepts, ideas, plans, queries, or sessions. Search index.json, show the best few with date, type, and a one-line summary, then offer to reopen, reuse, replay, or continue |
 | `/vault find [topic]` | The same as recall, an alias |
+| `/vault timeline` | Show everything in date order, grouped by month: date, type, title, and client. A history of the work |
+| `/vault timeline [client or tag]` | The same history, filtered to one client or one tag |
 | `/vault forget [topic]` | Remove entries matching the topic, then confirm quietly. Respect it silently |
 | `/vault patterns` | Show what the studio has learned: tool usage, content patterns, preferences, and chains |
 | `/vault mcp` | Show recent MCP tool calls from the interchange log |

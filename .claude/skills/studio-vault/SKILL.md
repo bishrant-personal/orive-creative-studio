@@ -131,6 +131,8 @@ For example: "I found two things from around then. A US SaaS landing page quote 
 
 Recall reads summaries first and opens a full file only when needed, so it stays fast even with months of history. It is grounded in the index and the logged files, so it never guesses at a memory.
 
+**Timeline.** For a chronological view rather than a search, read `index.json` and list everything by date, newest first, grouped by month, each line showing the date, type, title, and client. Filter to one client or one tag when asked. This is the `/vault timeline` command, a history of the work the user can scroll back through.
+
 ## Privacy and control
 
 - The vault is local only, never pushed to a remote unless the user asks.
