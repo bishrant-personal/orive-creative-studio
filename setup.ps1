@@ -8,7 +8,8 @@
 param(
   [switch]$CheckOnly,
   [switch]$WithDocker,
-  [switch]$WithPython
+  [switch]$WithPython,
+  [switch]$WithBun
 )
 
 $ErrorActionPreference = "Stop"
@@ -53,7 +54,8 @@ function Preflight {
     @{n="ImageMagick";c="magick"},
     @{n="pandoc";     c="pandoc"},
     @{n="yt-dlp";     c="yt-dlp"},
-    @{n="PDF maker";  c="wkhtmltopdf"}
+    @{n="PDF maker";  c="wkhtmltopdf"},
+    @{n="uv (MCP)";   c="uv"}
   )
   foreach ($k in $checks) {
     if (Have $k.c) { $rows += "  {0,-12} ready" -f $k.n }
@@ -138,12 +140,21 @@ if ((Test-Path $wkBin) -and -not (Have "wkhtmltopdf")) {
   Refresh-Path
 }
 
+# --- the MCP runner (uv) ---
+# uvx runs most local MCP servers, like the Blender connector. It is small and
+# the studio installs it so those tools work the moment you connect them.
+if (Have "uv") { Say "The MCP runner (uv) is already here." } else { Winget-Install "astral-sh.uv" "the MCP runner (uv)" }
+
 # --- optional extras, only when asked ---
 if ($WithDocker) {
   if (Have "docker") { Say "Docker is already here." } else { Winget-Install "Docker.DockerDesktop" "Docker Desktop" }
 }
 if ($WithPython) {
   if (Have "python") { Say "Python is already here." } else { Winget-Install "Python.Python.3.12" "Python" }
+}
+if ($WithBun) {
+  # Bun is needed only by the Affinity MCP connector.
+  if (Have "bun") { Say "Bun is already here." } else { Winget-Install "Oven-sh.Bun" "Bun" }
 }
 
 Refresh-Path

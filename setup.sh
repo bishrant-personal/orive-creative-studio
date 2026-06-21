@@ -15,11 +15,13 @@ cd "$(cd "$(dirname "$0")" 2>/dev/null && pwd)" 2>/dev/null || true
 CHECK_ONLY="no"
 WITH_DOCKER="no"
 WITH_PYTHON="no"
+WITH_BUN="no"
 for arg in "$@"; do
   case "$arg" in
     --check)        CHECK_ONLY="yes" ;;
     --with-docker)  WITH_DOCKER="yes" ;;
     --with-python)  WITH_PYTHON="yes" ;;
+    --with-bun)     WITH_BUN="yes" ;;
   esac
 done
 
@@ -62,7 +64,7 @@ pm_install() {
 
 preflight() {
   say "Checking what you already have."
-  for pair in "Node.js:node" "npm:npm" "git:git" "GitHub CLI:gh" "Claude Code:claude" "ffmpeg:ffmpeg" "ImageMagick:magick" "pandoc:pandoc" "yt-dlp:yt-dlp" "PDF maker:wkhtmltopdf"; do
+  for pair in "Node.js:node" "npm:npm" "git:git" "GitHub CLI:gh" "Claude Code:claude" "ffmpeg:ffmpeg" "ImageMagick:magick" "pandoc:pandoc" "yt-dlp:yt-dlp" "PDF maker:wkhtmltopdf" "uv (MCP):uv"; do
     label="${pair%%:*}"; cmd="${pair##*:}"
     if have "$cmd"; then printf "  %-12s ready\n" "$label"; else printf "  %-12s missing\n" "$label"; fi
   done
@@ -135,12 +137,28 @@ have pandoc                  || { say "Installing the document maker."; pm_insta
 have yt-dlp                  || { say "Installing the clip downloader."; pm_install yt-dlp || say "yt-dlp is optional, you can add it later."; }
 have wkhtmltopdf             || { say "Installing the PDF maker."; { [ "$OS" = "mac" ] && brew install --cask wkhtmltopdf; } || pm_install wkhtmltopdf || say "The PDF maker is optional, you can add it later."; }
 
+# --- the MCP runner (uv) ---
+# uvx runs most local MCP servers, like the Blender connector. Small, so the
+# studio installs it so those tools work the moment you connect them.
+if have uv; then
+  say "The MCP runner (uv) is already here."
+else
+  say "Installing the MCP runner (uv)."
+  if [ "$OS" = "mac" ]; then brew install uv || curl -LsSf https://astral.sh/uv/install.sh | sh
+  else curl -LsSf https://astral.sh/uv/install.sh | sh || pm_install uv || say "uv is optional, you can add it later from astral.sh/uv."; fi
+  export PATH="$HOME/.local/bin:$PATH"
+fi
+
 # --- optional extras, only when asked ---
 if [ "$WITH_DOCKER" = "yes" ]; then
   if have docker; then say "Docker is already here."; else say "Installing Docker."; { [ "$OS" = "mac" ] && brew install --cask docker; } || pm_install docker.io || say "Please install Docker Desktop from docker.com."; fi
 fi
 if [ "$WITH_PYTHON" = "yes" ]; then
   if have python3; then say "Python is already here."; else say "Installing Python."; pm_install python3 || say "Please install Python 3 from python.org."; fi
+fi
+if [ "$WITH_BUN" = "yes" ]; then
+  # Bun is needed only by the Affinity MCP connector.
+  if have bun; then say "Bun is already here."; else say "Installing Bun."; curl -fsSL https://bun.sh/install | bash || say "Bun is optional, see bun.sh."; fi
 fi
 
 say "All set."

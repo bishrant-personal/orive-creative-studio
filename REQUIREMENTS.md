@@ -25,6 +25,19 @@ The creative specialists need a few real tools to make actual files, not just te
 | pandoc | Turn a brief into a polished document: proposals, quotes, brochures, and decks | Pricing, Hospitality, Brand, Research |
 | wkhtmltopdf | The PDF engine pandoc uses to render proposals and print collateral | Pricing, Hospitality |
 | yt-dlp | Pull a reference clip to study its pacing or look | Videographer, Cinematographer |
+| uv | Runs most local MCP servers through uvx, like the Blender connector | the MCP-based tools in creative-toolbox and fashion-knowledge |
+
+## Creative tools you connect or install when you choose them
+
+The studio recommends and connects many creative tools through the `creative-toolbox` and `fashion-knowledge` skills. Most are not auto-installed, because they are either a one-click connector or a large or paid desktop app. The setup installs only the small enablers so a tool works the moment you connect it. The heavy apps are never downloaded silently, the studio guides their install per tool, with real links, when you choose that tool.
+
+| Tool | How you get it | Prerequisite the setup handles |
+|---|---|---|
+| Adobe, Figma, Canva, Higgsfield | one-click connector or hosted MCP, sign-in only | none |
+| Blender (MCP) | install Blender yourself, then the studio adds the connector | uv, installed by default |
+| DaVinci Resolve (MCP) | needs Resolve Studio (paid) and Python | Python, via `--with-python` or `-WithPython` |
+| Affinity (MCP) | install Affinity yourself, macOS best | Bun, via `--with-bun` or `-WithBun` |
+| CLO3D, Browzwear, Style3D, pattern CAD | standalone or enterprise apps, you install and license | none, the studio guides setup |
 
 ## Manual prerequisite for desktop control
 
@@ -46,8 +59,9 @@ These are not installed by default. The studio runs fine without them. Install t
 
 | Software | When you would want it |
 |---|---|
-| Docker Desktop | Only if you choose to run a containerized MCP server locally. The default setup uses hosted and remote MCP servers, so this is not required |
-| Python 3 | Only if you connect an MCP server that is built in Python. The default connections do not need it |
+| Docker Desktop | Only if you choose to run a containerized MCP server locally. Add it with `--with-docker` or `-WithDocker` |
+| Python 3 | Only for local MCP servers that need it, like the DaVinci Resolve connector. Add it with `--with-python` or `-WithPython` |
+| Bun | Only for the Affinity MCP connector. Add it with `--with-bun` or `-WithBun` |
 | curl and jq | Convenience for raw API calls in the shell. Node already covers this, so they are optional |
 
 ## No install needed, these connect with a sign-in or a key
