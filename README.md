@@ -6,13 +6,26 @@ You never need to know the technical bits. Describe what you want, answer a coup
 
 ## Getting started
 
-Clone this repo and run the setup script. It installs what is needed and starts the studio.
+Clone this repo and run the setup script for your machine. It installs what is needed, skips anything you already have, and starts the studio.
 
 ```
 git clone https://github.com/bishrant-personal/home-studio.git home-studio
 cd home-studio
+```
+
+On Windows:
+
+```
+powershell -ExecutionPolicy Bypass -File .\setup.ps1
+```
+
+On macOS or Linux:
+
+```
 ./setup.sh
 ```
+
+To see what is installed without changing anything, add `-CheckOnly` on Windows or `--check` on macOS and Linux. The full list of what the studio needs is in `REQUIREMENTS.md`.
 
 On the first start, Home Studio greets you, signs you into GitHub so your work is always saved, and offers a few simple things to do first.
 
