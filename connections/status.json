@@ -24,7 +24,7 @@
       "scope": "read references and tokens from files the user names",
       "required": false,
       "last_validated": "2026-06-21",
-      "detail": "Validated with whoami. Signed in as Bishrant (btandukar@omnesoft.com)."
+      "detail": "Validated with whoami. Account reachable and signed in."
     },
     "slack": {
       "connected": true,
@@ -40,7 +40,7 @@
       "scope": "read and write team docs",
       "required": false,
       "last_validated": "2026-06-21",
-      "detail": "Validated by listing collections at docs.omnesoft.com."
+      "detail": "Validated by listing collections. Workspace reachable."
     },
     "pexels": {
       "connected": false,
