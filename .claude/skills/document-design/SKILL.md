@@ -60,6 +60,18 @@ td.amount, th.amount { text-align: right; }
 
 For a slide deck, pandoc can target `pptx` or an HTML slide format. For a Word handover, target `docx`. Generated files go under `outputs/` or the client folder, and the host saves them. Use ImageMagick to size and place any reference images, and credit photographers per `image-sources`.
 
+## Fonts: use the studio set only
+
+The studio installs a curated font set (see `scripts/install-fonts`). Use only these for any design or document, and pick by role. Use a different font only if the user provides one or asks for a specific one.
+
+- **Body and UI sans:** Inter, Manrope, Urbanist, IBM Plex Sans, Lato, Nunito, Montserrat
+- **Serif and editorial:** Playfair Display, EB Garamond, Libre Baskerville
+- **Display and impact:** Archivo Black, Changa One, Chelsea Market, Bitcount Prop Single
+- **Script and accent:** Dancing Script, League Script, Yesteryear
+- **Monospace and code:** IBM Plex Mono
+
+Keep it to two type families per piece, one for headings and one for body, with a third only as a rare accent. Note: Google Sans is proprietary and not installable, so use Inter or Manrope in its place unless the user supplies the file.
+
 ## The bar
 
 Before handing a document over, check it: is the hierarchy clear in three seconds, does it lead with the answer, do the numbers line up, is there enough whitespace, is the palette restrained, and is there one clear next step. If not, fix it before showing the user. No em dashes, anywhere.

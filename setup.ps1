@@ -145,6 +145,10 @@ if ((Test-Path $wkBin) -and -not (Have "wkhtmltopdf")) {
 # the studio installs it so those tools work the moment you connect them.
 if (Have "uv") { Say "The MCP runner (uv) is already here." } else { Winget-Install "astral-sh.uv" "the MCP runner (uv)" }
 
+# --- the studio fonts ---
+Say "Setting up the studio fonts."
+try { & (Join-Path $PSScriptRoot "scripts\install-fonts.ps1") } catch { Say "Fonts will finish later. You can run scripts\install-fonts.ps1 anytime." }
+
 # --- optional extras, only when asked ---
 if ($WithDocker) {
   if (Have "docker") { Say "Docker is already here." } else { Winget-Install "Docker.DockerDesktop" "Docker Desktop" }

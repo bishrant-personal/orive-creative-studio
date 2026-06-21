@@ -2,6 +2,15 @@
 
 This is the full list of software Orive Creative Studio depends on, and what installs it. You do not have to read this. The setup scripts install everything for you and skip anything you already have. This file is here so the list is honest and visible. No em dashes, ever.
 
+## Before you install (two free apps, by hand)
+
+Only two things are set up by hand first. Everything below them is automatic.
+
+| App | Why | Link |
+|---|---|---|
+| Claude desktop app | where the studio lives and talks to you | https://claude.ai/download |
+| A terminal | the window where you paste the one-line setup. Warp, Ghostty, or VS Code, pick one | https://www.warp.dev/ , https://ghostty.org/ , https://code.visualstudio.com/ |
+
 ## Required
 
 These must be present for the studio to work. The setup scripts install any that are missing.
@@ -26,6 +35,9 @@ The creative specialists need a few real tools to make actual files, not just te
 | wkhtmltopdf | The PDF engine pandoc uses to render proposals and print collateral | Pricing, Hospitality |
 | yt-dlp | Pull a reference clip to study its pacing or look | Videographer, Cinematographer |
 | uv | Runs most local MCP servers through uvx, like the Blender connector | the MCP-based tools in creative-toolbox and fashion-knowledge |
+| Studio fonts | The curated type set installed per user, used for all design and document work | Brand, Content, Fashion, Hospitality, document-design |
+
+The studio fonts are Inter, IBM Plex Sans, IBM Plex Mono, Montserrat, Lato, Nunito, Playfair Display, Archivo Black, Manrope, Bitcount Prop Single, Chelsea Market, Libre Baskerville, Changa One, EB Garamond, Urbanist, League Script, Dancing Script, and Yesteryear, fetched from the open google/fonts library by `scripts/install-fonts`. Google Sans is proprietary and not in the open library, so the studio uses Inter or Manrope in its place unless you supply the file.
 
 ## Creative tools you connect or install when you choose them
 

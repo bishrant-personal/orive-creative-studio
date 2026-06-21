@@ -12,14 +12,36 @@ Think of it like walking into a small studio where a warm host greets you at the
 
 ## Contents
 
-1. [What it can do](#-what-it-can-do)
-2. [How it works](#-how-it-works)
-3. [Try saying](#-try-saying)
-4. [Make it yours](#-make-it-yours)
-5. [Good to know](#-good-to-know)
-6. [Use it anywhere](#-use-it-anywhere)
-7. [Get started](#-get-started)
-8. [The technical bits](#-the-technical-bits)
+1. [Before you start](#-before-you-start-two-free-apps)
+2. [What it can do](#-what-it-can-do)
+3. [Everything you get](#-everything-you-get)
+4. [How it works](#-how-it-works)
+5. [Try saying](#-try-saying)
+6. [Make it yours](#-make-it-yours)
+7. [Good to know](#-good-to-know)
+8. [Use it anywhere](#-use-it-anywhere)
+9. [Get started](#-get-started)
+10. [The technical bits](#-the-technical-bits)
+
+---
+
+## ✅ Before you start (two free apps)
+
+Orive Creative Studio runs inside Claude Code, so you set up two free things by hand first. Both take a couple of minutes, and that is the only manual part. Everything else, the studio installs for you.
+
+**1. Claude, the desktop app.** This is where the studio lives and talks to you. Think of it as the building the studio sits inside. Get it free here: https://claude.ai/download
+
+**2. A terminal, your way in.** A terminal is just a small window where you paste one line to begin. Pick whichever one of these free apps you like, you only need one.
+
+| App | Good for | Works on | Link |
+|---|---|---|---|
+| Warp | a modern, friendly terminal, easy for beginners | Windows, macOS, Linux | https://www.warp.dev/ |
+| Ghostty | fast and clean, very simple | macOS, Linux | https://ghostty.org/ |
+| VS Code | a terminal plus a place to see your files | Windows, macOS, Linux | https://code.visualstudio.com/ |
+
+---
+
+That is the whole manual setup. The one command further down installs the rest, Claude Code, the browser and creative tools, the fonts, and the studio itself, then it greets you. Keep going, the good part is just below. 👇
 
 ---
 
@@ -57,6 +79,25 @@ A whole creative team in one place. Say what you want in plain words, and the ho
 | 👗 Fashion | fashion, clothes, garment, fabric, collection, lookbook, Dhaka, Pashmina | fashion design, tailoring, textile craft, cultural dress, and the business of clothing |
 
 Plus the host, **Orive**, who greets you, picks the right specialist, and runs a small crew when a job needs more than one. You never need to remember names. Just say what you want.
+
+---
+
+## ✨ Everything you get
+
+| Feature | What it gives you |
+|---|---|
+| 15 specialists | a full creative team: brand, content, growth, pricing, research, ops, the creative crew, hospitality, and fashion |
+| One host, one voice | Orive greets you, routes to the right specialist, and runs a small crew when a job needs several |
+| Pick a personality | choose The Director, The Sage, The Bestie, or Straight Shooter. The tone changes, the quality never does |
+| Real professional minds | each specialist thinks with real craft frameworks, not generic answers |
+| Tool recommendation and setup | it suggests the right creative tool for your task and installs or connects it, with real links |
+| A local memory vault | it remembers past sessions, the tools you used, and the cost, and saves replayable recipes of how work was made |
+| High-craft documents | polished quotes, proposals, invoices, and decks as real PDFs |
+| Native chart and pattern making | cross-stitch and knitting charts, weaving drafts, stitch guides, and technical flats, generated on the spot |
+| Curated studio fonts | a hand-picked font set installed for you, used across all design work |
+| Works everywhere | the same studio in the terminal, the desktop app, Chat, and Cowork |
+| Auto-save to GitHub | every finished piece is committed and backed up. You never touch git |
+| Safe by default | it stages anything that spends money or posts publicly for your yes, and never invents facts or links |
 
 ---
 
@@ -152,7 +193,7 @@ Install it the same way everywhere: add the marketplace, then install.
 
 ## 🚀 Get started
 
-**The easiest way, one line.** It fetches the studio and starts it.
+**The easiest way, one line.** This single command installs everything for you, Claude Code, the browser tool, the creative tools, and the studio fonts, then it starts the studio and greets you. Nothing else to set up.
 
 On Windows, in PowerShell:
 
@@ -197,17 +238,23 @@ To check what is installed without changing anything, add `-CheckOnly` on Window
 
 <br>
 
-It sets up the few tools the studio runs on, and skips any you already have.
+It sets up the tools the studio runs on, and skips any you already have. Each is small and does one job.
 
-| Tool | What it is for |
+| Tool | What it does |
 |---|---|
-| Node.js, git, the GitHub tool, Claude Code | the foundation the studio runs on |
-| A small browser tool | opening live pages and taking screenshots |
-| ffmpeg | video, frame grabs, and clip details |
-| ImageMagick | images, resizing, and moodboard sheets |
-| pandoc with a PDF maker | turning a brief into a polished document or PDF |
+| Node.js | the engine Claude Code and the helper tools run on |
+| git and the GitHub tool | save and back up your work, and sign you in once |
+| Claude Code | the studio's runtime, the thing you actually talk to |
+| Playwright Chromium | a private browser so Research and Content can open a live page and grab a screenshot |
+| ffmpeg | video and audio: frame grabs, trimming, transcoding, and reading clip details |
+| ImageMagick | images: resize, convert, and build moodboard contact sheets |
+| pandoc | turns a brief into a polished document, like Word, slides, or HTML |
+| wkhtmltopdf | renders those documents into clean PDFs |
+| yt-dlp | pulls a reference clip so a specialist can study its pacing or look |
+| uv | runs local tool servers, like the Blender connector, the moment you add them |
+| The studio fonts | the curated set (Inter, Playfair Display, IBM Plex, and more) used for all design work |
 
-It uses the right installer for your machine (winget, Homebrew, or apt). Docker and Python are optional and only added if you ask. The full list is in `REQUIREMENTS.md`.
+It uses the right installer for your machine (winget on Windows, Homebrew on macOS, apt on Linux). Docker, Python, and Bun are optional and only added if you ask with a flag. The full list, including the connect-only tools like Adobe and Higgsfield, is in `REQUIREMENTS.md`.
 
 </details>
 
