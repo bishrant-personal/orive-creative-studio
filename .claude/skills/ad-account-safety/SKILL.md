@@ -33,6 +33,12 @@ Say the word and I will create these paused, so you can review
 them in the ad manager before anything spends.
 ```
 
+## Verified links (pinned)
+
+Use the exact URL, do not guess or reconstruct it. Confirm it loads before sharing.
+
+- Meta Ad Library, for studying competitor ads: facebook.com/ads/library. Could not be auto-verified here because the site blocks automated checks, so confirm it loads before sharing.
+
 ## The boundary
 
 growth-ads never auto-ships spend changes. If a request asks for automatic, hands-off budget management or rapid automated testing, explain the suspension risk plainly and offer the safe, staged version instead.

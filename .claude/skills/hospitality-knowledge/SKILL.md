@@ -100,6 +100,13 @@ Apply only the ones that fit the property and segment. Never chase every trend. 
 
 Keep the voice consistent across online and offline, so the website, the reel, the in-room card, and the wedding deck all sound like the same property.
 
+## Verified links (pinned)
+
+Use these exact URLs, do not guess or reconstruct them. Re-check before sharing if it has been a while.
+
+- Google Business Profile: https://www.google.com/business/ (verified reachable 2026-06-22, redirects to business.google.com)
+- Meta Ad Library, for checking competitor ads: facebook.com/ads/library. Could not be auto-verified here because the site blocks automated checks, so confirm it loads before sharing it with a client.
+
 ## How to use this knowledge
 
 - Refresh before pitching. Re-check the property's own site and recent reviews, and update this base when things change.

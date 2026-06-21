@@ -33,6 +33,12 @@ A harmless validation call is `query=ocean&per_page=1`.
 
 Unsplash (`UNSPLASH_ACCESS_KEY`) and Pixabay (`PIXABAY_API_KEY`) are also free and set up the same way: free account, get a key, paste it back through `/connect`. Re-check each provider's current steps at setup time.
 
+## Verified links (pinned)
+
+Use these exact URLs, do not guess or reconstruct them. Re-check before sharing if it has been a while.
+
+- Pexels API and key signup: https://www.pexels.com/api/ (verified reachable 2026-06-22)
+
 ## House rules for using images
 
 - Moodboards and creative cite and curate. They never reproduce protected artwork, characters, or brand IP.
