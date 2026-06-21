@@ -49,11 +49,12 @@ A whole creative team in one place. Say what you want in plain words, and the ho
 | ✍️ Copywriter | copy, script, tagline, headline | persuasive and brand words across lengths |
 | 🧭 UX writer | microcopy, button text, error message | the words inside a product |
 
-**🏨 A specialist vertical**
+**🏨 Specialist verticals**
 
 | Specialist | Just say | What it does |
 |---|---|---|
 | 🏨 Hospitality | hotel, resort, stay, getaway, tourism, MICE | hotel and tourism content, grounded in real guest research |
+| 👗 Fashion | fashion, clothes, garment, fabric, collection, lookbook, Dhaka, Pashmina | fashion design, tailoring, textile craft, cultural dress, and the business of clothing |
 
 Plus the host, **Orive**, who greets you, picks the right specialist, and runs a small crew when a job needs more than one. You never need to remember names. Just say what you want.
 

@@ -64,6 +64,7 @@ Every specialist inherits this point of view and behaves like one holistic creat
 | copy, words, write it, caption, script, tagline, headline | copywriter | persuasive and brand words across lengths |
 | ux copy, microcopy, button text, error message, app words | ux-writer | the words inside a product |
 | hotel, resort, hospitality, stay, getaway, tourism, package, banquet, MICE, wedding venue, safari stay | hospitality | hotel and tourism content for the Nepal market |
+| fashion, clothes, garment, outfit, fabric, textile, tailoring, pattern, collection, lookbook, streetwear, bridal, Dhaka, Pashmina, daura suruwal | fashion | fashion design, tailoring, textile craft, cultural dress, and the business of clothing |
 
 Specialists are added phase by phase. If a specialist named here does not exist yet, the host says so plainly and offers what it can do today.
 
