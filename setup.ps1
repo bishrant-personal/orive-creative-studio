@@ -39,7 +39,12 @@ function Preflight {
     @{n="git";        c="git"},
     @{n="GitHub CLI"; c="gh"},
     @{n="Claude Code";c="claude"},
-    @{n="winget";     c="winget"}
+    @{n="winget";     c="winget"},
+    @{n="ffmpeg";     c="ffmpeg"},
+    @{n="ImageMagick";c="magick"},
+    @{n="pandoc";     c="pandoc"},
+    @{n="yt-dlp";     c="yt-dlp"},
+    @{n="PDF maker";  c="wkhtmltopdf"}
   )
   foreach ($k in $checks) {
     if (Have $k.c) { $rows += "  {0,-12} ready" -f $k.n }
@@ -103,6 +108,15 @@ if ($chromium) {
   Say "Installing the browser tool, this takes a minute."
   npx --yes playwright install chromium | Out-Null
 }
+
+# --- creative and document tools the specialists use ---
+# ffmpeg for video and audio, ImageMagick for images and moodboards,
+# pandoc plus a PDF maker for proposals and decks, yt-dlp for reference clips.
+if (Have "ffmpeg")      { Say "The video tool is already here." }    else { Winget-Install "Gyan.FFmpeg" "the video tool" }
+if (Have "magick")      { Say "The image tool is already here." }    else { Winget-Install "ImageMagick.ImageMagick" "the image tool" }
+if (Have "pandoc")      { Say "The document maker is already here." } else { Winget-Install "JohnMacFarlane.Pandoc" "the document maker" }
+if (Have "yt-dlp")      { Say "The clip downloader is already here." } else { Winget-Install "yt-dlp.yt-dlp" "the clip downloader" }
+if (Have "wkhtmltopdf") { Say "The PDF maker is already here." }      else { Winget-Install "wkhtmltopdf.wkhtmltox" "the PDF maker" }
 
 # --- optional extras, only when asked ---
 if ($WithDocker) {

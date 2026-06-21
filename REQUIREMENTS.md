@@ -14,6 +14,22 @@ These must be present for the studio to work. The setup scripts install any that
 | Claude Code | The agent runtime the whole studio lives in | official installer, with npm as a fallback |
 | Chromium (via Playwright) | Lets the Research and Content specialists open a live page and capture a screenshot | npx playwright install chromium |
 
+## Creative and document tools
+
+The creative specialists need a few real tools to make actual files, not just text. The setup scripts install these too, and skip any you already have.
+
+| Software | Why it is needed | Used by |
+|---|---|---|
+| ffmpeg | Video and audio work: frame grabs, transcode, thumbnails, and reading clip details | Videographer, Cinematographer, Content |
+| ImageMagick | Image work: resize, convert, and build moodboard contact sheets | Brand, Content, Concept artist |
+| pandoc | Turn a brief into a polished document: proposals, quotes, brochures, and decks | Pricing, Hospitality, Brand, Research |
+| wkhtmltopdf | The PDF engine pandoc uses to render proposals and print collateral | Pricing, Hospitality |
+| yt-dlp | Pull a reference clip to study its pacing or look | Videographer, Cinematographer |
+
+## Manual prerequisite for desktop control
+
+Layer 2 of desktop control, where the studio takes direct control of the screen for an app with no connector or API, runs through the Claude desktop app on a Pro or Max plan, on macOS or Windows. That is a sign-in and a plan, not a package, so the setup scripts cannot install it. The studio prefers connectors and the browser first and only reaches for screen control when nothing else fits. See the `desktop-control` skill.
+
 ## Installer mechanism, one per operating system
 
 The setup scripts use the right one for your machine automatically.

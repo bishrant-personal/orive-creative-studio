@@ -59,7 +59,7 @@ pm_install() {
 
 preflight() {
   say "Checking what you already have."
-  for pair in "Node.js:node" "npm:npm" "git:git" "GitHub CLI:gh" "Claude Code:claude"; do
+  for pair in "Node.js:node" "npm:npm" "git:git" "GitHub CLI:gh" "Claude Code:claude" "ffmpeg:ffmpeg" "ImageMagick:magick" "pandoc:pandoc" "yt-dlp:yt-dlp" "PDF maker:wkhtmltopdf"; do
     label="${pair%%:*}"; cmd="${pair##*:}"
     if have "$cmd"; then printf "  %-12s ready\n" "$label"; else printf "  %-12s missing\n" "$label"; fi
   done
@@ -122,6 +122,15 @@ else
   npx --yes playwright install chromium >/dev/null 2>&1 || say "The browser tool will finish setting up the first time a specialist needs it."
   [ "$OS" = "linux" ] && (npx --yes playwright install-deps chromium >/dev/null 2>&1 || true)
 fi
+
+# --- creative and document tools the specialists use ---
+# ffmpeg for video and audio, ImageMagick for images and moodboards,
+# pandoc plus a PDF maker for proposals and decks, yt-dlp for reference clips.
+have ffmpeg                  || { say "Installing the video tool."; pm_install ffmpeg || say "Please install ffmpeg, then run me again."; }
+{ have magick || have convert; } || { say "Installing the image tool."; pm_install imagemagick || say "Please install ImageMagick."; }
+have pandoc                  || { say "Installing the document maker."; pm_install pandoc || say "Please install pandoc."; }
+have yt-dlp                  || { say "Installing the clip downloader."; pm_install yt-dlp || say "yt-dlp is optional, you can add it later."; }
+have wkhtmltopdf             || { say "Installing the PDF maker."; { [ "$OS" = "mac" ] && brew install --cask wkhtmltopdf; } || pm_install wkhtmltopdf || say "The PDF maker is optional, you can add it later."; }
 
 # --- optional extras, only when asked ---
 if [ "$WITH_DOCKER" = "yes" ]; then

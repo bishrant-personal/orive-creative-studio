@@ -202,6 +202,7 @@ The setup script sets up the few tools the studio runs on, and skips any you alr
 - git and the GitHub tool, which save and back up your work
 - Claude Code itself, the studio's home
 - A small browser tool, so the Research and Content specialists can open a live page and grab a screenshot
+- A few creative tools, so the studio can make real files: one for video, one for images, and one for turning a brief into a polished document or PDF
 
 It uses the right installer for your machine, so it just works on Windows, mac, or Linux. A few extras like Docker and Python are optional and only installed if you ask for them. The full list lives in `REQUIREMENTS.md`.
 
