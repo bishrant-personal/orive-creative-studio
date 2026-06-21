@@ -25,19 +25,37 @@ Think of it like walking into a small studio where a warm host greets you at the
 
 ## ✨ What it can do
 
-Five kinds of creative work, each with a specialist who is good at it.
+A whole creative team in one place. Say what you want in plain words, and the host brings in the right specialist. Here is everyone you can reach.
 
-| You need help with | Just say | And you get |
+**🧠 The core team**
+
+| Specialist | Just say | What it does |
 |---|---|---|
-| 🪄 Brand and identity | brand, logo, moodboard, name, vibe | A brand brief, naming options, a moodboard, and a palette and type direction |
-| 📱 Social content | content, posts, reels, captions, calendar | Reel scripts, carousels, captions, a posting calendar, and shot lists |
-| 📈 Ads and performance | ads, campaign, metrics, why is it not working | Campaign ideas, ad copy, a plain read of your numbers, changes staged for approval |
-| 💰 Pricing and proposals | price, quote, invoice, proposal, rate | A tiered quote, a scope of work, an invoice, and a reason you can defend |
-| 🔍 Research and discovery | research, market, competitors, audience | A scoping brief, a competitor scan, interview guides, and a clear recommendation |
+| 🪄 Brand | brand, logo, moodboard, name, vibe | brand identity, naming, moodboards, art direction |
+| 📱 Content | content, posts, reels, captions, calendar | social content, reels, carousels, posting calendars |
+| 📈 Growth | ads, campaign, metrics, why is it not working | paid ads, campaign structure, reading the numbers |
+| 💰 Pricing | price, quote, invoice, proposal, rate | quotes, proposals, rate cards, invoicing |
+| 🔍 Research | research, market, competitors, audience | scoping, competitor scans, audience discovery |
+| 🗂️ Studio Ops | schedule, file, save, handover | scheduling, filing, tracking, handovers |
 
-Behind these sit a full crew you can also reach: a **videographer**, **cinematographer**, **concept artist**, **set designer**, **copywriter**, and **UX writer**, plus a **hospitality** specialist for hotels and tourism. The host brings in whoever fits, and runs a small crew when a job needs more than one.
+**🎬 The creative crew**
 
-You never need to remember names. Just say what you want in your own words.
+| Specialist | Just say | What it does |
+|---|---|---|
+| 🎬 Videographer | video, shoot, edit, b-roll | shot lists, pacing, the structure of the edit |
+| 🎥 Cinematographer | look, camera, lighting, mood | framing, lensing, lighting, color, movement |
+| 🖼️ Concept artist | concept, key art, world | early ideas, worlds, characters, key art |
+| 🪑 Set designer | set, props, scene, backdrop | the staged scene, props, layout, styling |
+| ✍️ Copywriter | copy, script, tagline, headline | persuasive and brand words across lengths |
+| 🧭 UX writer | microcopy, button text, error message | the words inside a product |
+
+**🏨 A specialist vertical**
+
+| Specialist | Just say | What it does |
+|---|---|---|
+| 🏨 Hospitality | hotel, resort, stay, getaway, tourism, MICE | hotel and tourism content, grounded in real guest research |
+
+Plus the host, **Orive**, who greets you, picks the right specialist, and runs a small crew when a job needs more than one. You never need to remember names. Just say what you want.
 
 ---
 
@@ -50,7 +68,7 @@ You never need to remember names. Just say what you want in your own words.
 5. The result is saved and backed up to your private GitHub on its own.
 
 <details>
-<summary>See a sample conversation</summary>
+<summary><strong>💬 See a sample conversation</strong></summary>
 
 <br>
 
@@ -158,7 +176,7 @@ On the first start, the studio greets you, signs you into GitHub so your work is
 If you just wanted to know what Orive Creative Studio does, you are all set. The rest is for setting it up and taking it apart.
 
 <details>
-<summary>Install by hand</summary>
+<summary><strong>⌨️ Install by hand</strong></summary>
 
 <br>
 
@@ -174,22 +192,26 @@ To check what is installed without changing anything, add `-CheckOnly` on Window
 </details>
 
 <details>
-<summary>What it installs on your machine</summary>
+<summary><strong>📦 What it installs on your machine</strong></summary>
 
 <br>
 
-It sets up the few tools the studio runs on, and skips any you already have:
+It sets up the few tools the studio runs on, and skips any you already have.
 
-- Node.js, git, the GitHub tool, and Claude Code itself
-- A small browser tool for opening live pages and screenshots
-- Creative tools so the studio can make real files: ffmpeg for video, ImageMagick for images, and pandoc with a PDF maker for polished documents
+| Tool | What it is for |
+|---|---|
+| Node.js, git, the GitHub tool, Claude Code | the foundation the studio runs on |
+| A small browser tool | opening live pages and taking screenshots |
+| ffmpeg | video, frame grabs, and clip details |
+| ImageMagick | images, resizing, and moodboard sheets |
+| pandoc with a PDF maker | turning a brief into a polished document or PDF |
 
 It uses the right installer for your machine (winget, Homebrew, or apt). Docker and Python are optional and only added if you ask. The full list is in `REQUIREMENTS.md`.
 
 </details>
 
 <details>
-<summary>How to uninstall</summary>
+<summary><strong>🧹 How to uninstall</strong></summary>
 
 <br>
 
@@ -215,7 +237,7 @@ The shared tools (Node, git, the GitHub tool, Docker, Python) are used by other 
 </details>
 
 <details>
-<summary>What is inside the project</summary>
+<summary><strong>🧰 What is inside the project</strong></summary>
 
 <br>
 
