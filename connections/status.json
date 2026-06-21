@@ -42,6 +42,14 @@
       "last_validated": "2026-06-21",
       "detail": "Validated by listing collections. Workspace reachable."
     },
+    "notion": {
+      "connected": false,
+      "method": "Official Notion connector",
+      "scope": "read and write notes, databases, and project pages",
+      "required": false,
+      "last_validated": null,
+      "detail": "Used by studio-ops. Connect via the Connectors tab when a task needs Notion."
+    },
     "pexels": {
       "connected": false,
       "method": "API key in local env as PEXELS_API_KEY",

@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "note": "The creative tool knowledge base for Orive Creative Studio. Structured data the host and every specialist read to recommend, check, and install the right tool. This is tier-zero seeded knowledge, no web search needed to use it.",
+  "refresh": "Re-check the source repos and connector pages quarterly, not on every call. Only search when verifying that a repo, installer, or MCP URL has changed.",
+  "tools": [
+    {
+      "id": "adobe",
+      "name": "Adobe Creative Cloud",
+      "apps": ["Photoshop", "Lightroom", "Illustrator", "Premiere", "InDesign", "Express", "Firefly", "Stock"],
+      "type": "official connector",
+      "location": "cloud-side, no local app needed",
+      "install": {
+        "method": "connector",
+        "steps": "Open Customize, go to Connectors, click +, find Adobe, sign in with your Adobe ID."
+      },
+      "free_tier": "about 40 tools as guest, full 50 plus with sign-in",
+      "best_for": ["photo edit", "image generation", "vector", "video edit", "layout print", "templates", "stock assets"],
+      "link": "https://developer.adobe.com/adobe-for-creativity/",
+      "status_key": "adobe"
+    },
+    {
+      "id": "higgsfield",
+      "name": "Higgsfield",
+      "type": "official hosted MCP server",
+      "location": "cloud-side, no local install",
+      "install": {
+        "method": "hosted_mcp",
+        "mcp_url": "https://mcp.higgsfield.ai/mcp",
+        "steps_chat": "Open Customize, go to Connectors, click +, select Add custom connector, name it Higgsfield, paste https://mcp.higgsfield.ai/mcp as the URL, click Connect, sign in with your Higgsfield account.",
+        "command_claude_code": "claude mcp add higgsfield --transport http https://mcp.higgsfield.ai/mcp"
+      },
+      "free_tier": "new accounts ship with free credits",
+      "costs": "credit-based per generation, varies by model and resolution",
+      "models": ["Soul", "Cinema Studio", "Veo 3.1", "Sora 2", "Kling 3.0", "Seedance 2.0", "Flux", "Seedream", "Minimax Hailuo", "Nano Banana Pro"],
+      "best_for": ["video generation", "image generation", "text-to-video", "image-to-video", "video-to-video restyle", "character consistency", "batch ad creative", "product shots", "social content", "cinematic previsualization"],
+      "capabilities": "AI video up to 4K and up to 15 seconds, AI image up to 4K, character consistency via Soul training",
+      "pairs_with": ["videographer", "cinematographer", "content-studio", "growth-ads", "hospitality"],
+      "link": "https://higgsfield.ai/mcp",
+      "read_and_stage": true,
+      "read_and_stage_note": "Each generation costs credits. Show the model and the estimated cost before generating. Never auto-generate without the user saying yes.",
+      "status_key": "higgsfield"
+    },
+    {
+      "id": "davinci-resolve",
+      "name": "DaVinci Resolve",
+      "type": "community MCP",
+      "location": "local, requires Resolve Studio running",
+      "install": {
+        "method": "install_script",
+        "steps": "Clone samuelgursky/davinci-resolve-mcp, run python install.py. It auto-configures the client.",
+        "command_claude_code": "git clone https://github.com/samuelgursky/davinci-resolve-mcp && cd davinci-resolve-mcp && python install.py"
+      },
+      "requires": "Resolve Studio (not the free edition), Python 3.10 plus, external scripting set to Local in Resolve preferences",
+      "best_for": ["video edit", "color grading", "audio", "timeline", "render queue"],
+      "link": "https://github.com/samuelgursky/davinci-resolve-mcp",
+      "status_key": "davinci_resolve"
+    },
+    {
+      "id": "blender",
+      "name": "Blender",
+      "type": "community MCP plus official Blender lab server",
+      "location": "local",
+      "install": {
+        "method": "clone_and_config",
+        "steps": "Download addon.py from ahujasid/blender-mcp, install it in Blender addons, add the uvx server to .mcp.json.",
+        "requires_on_path": "uv and uvx"
+      },
+      "requires": "Blender installed, uv/uvx on PATH",
+      "best_for": ["3d", "scene creation", "prototyping", "rendering", "stl export"],
+      "link": "https://github.com/ahujasid/blender-mcp",
+      "status_key": "blender"
+    },
+    {
+      "id": "affinity",
+      "name": "Affinity",
+      "apps": ["Photo", "Designer", "Publisher"],
+      "type": "community MCP, drives the UI via AppleScript on macOS or registry automation on Windows",
+      "location": "local",
+      "install": {
+        "method": "clone_and_config",
+        "steps": "Clone sekharmalla/affinity-mcp-server, run bun install, add it to .mcp.json, grant Accessibility permission in System Settings."
+      },
+      "requires": "Affinity installed, macOS for best support",
+      "best_for": ["photo edit", "vector", "layout print"],
+      "maturity": "early, UI-driven not API-driven, slower and more fragile",
+      "alternative_to": "adobe",
+      "link": "https://github.com/sekharmalla/affinity-mcp-server",
+      "status_key": "affinity"
+    },
+    {
+      "id": "figma",
+      "name": "Figma",
+      "type": "official connector",
+      "location": "cloud-side",
+      "install": {
+        "method": "connector",
+        "steps": "Already connected. If not, open Customize, go to Connectors, click +, find Figma, sign in."
+      },
+      "best_for": ["design ui", "prototyping", "design systems", "handoff", "web", "brand asset"],
+      "link": "https://www.figma.com/",
+      "status_key": "figma"
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "type": "official connector",
+      "location": "cloud-side",
+      "install": {
+        "method": "connector",
+        "steps": "Already connected. If not, open Customize, go to Connectors, click +, find Canva, sign in."
+      },
+      "best_for": ["social graphic", "templates", "presentations", "brand asset"],
+      "link": "https://www.canva.com/",
+      "status_key": "canva"
+    },
+    {
+      "id": "pexels",
+      "name": "Pexels",
+      "type": "API key, free",
+      "location": "cloud-side",
+      "install": {
+        "method": "api_key",
+        "steps": "Sign up at https://www.pexels.com/api/, get the key, add it to .env as PEXELS_API_KEY.",
+        "env_var": "PEXELS_API_KEY",
+        "verify_call": "https://api.pexels.com/v1/search?query=ocean&per_page=1"
+      },
+      "best_for": ["stock assets", "royalty-free photos", "royalty-free video"],
+      "link": "https://www.pexels.com/api/",
+      "status_key": "pexels"
+    }
+  ],
+  "task_map": {
+    "photo edit": ["adobe", "affinity"],
+    "image generation": ["higgsfield", "adobe"],
+    "video generation": ["higgsfield"],
+    "video edit": ["davinci-resolve", "adobe"],
+    "3d": ["blender"],
+    "design ui": ["figma"],
+    "web": ["figma"],
+    "layout print": ["adobe", "affinity"],
+    "social graphic": ["canva"],
+    "brand asset": ["adobe", "figma", "canva"],
+    "stock assets": ["pexels", "adobe"]
+  },
+  "rules": {
+    "generation_first": "When the task is make a video or generate an image and no existing footage or photo is involved, recommend Higgsfield first. It is the fastest path from idea to visual because it runs cloud-side with no local app.",
+    "edit_existing": "If the user already has footage or photos to edit, recommend DaVinci or Adobe instead. If they need 3D, recommend Blender. Higgsfield generates, the others edit.",
+    "chain": "When a task needs both generation and editing, recommend the chain and name the handoff. Example: Higgsfield to generate a product video, then DaVinci or Adobe to grade it.",
+    "least_needed": "Never recommend more than the task needs. If Canva handles it, do not suggest Adobe. If Figma is connected and the task is UI, do not suggest Affinity."
+  }
+}

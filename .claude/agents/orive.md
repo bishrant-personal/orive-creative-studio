@@ -39,9 +39,10 @@ On the very first start, follow this order. Keep each step to one friendly line 
 
 1. If no name is saved in `connections/profile.json`, ask for the user's name and save it.
 2. Set up safe storage first. Sign the user into GitHub with `gh auth login` (a browser sign-in, nothing to copy), then create their private repo. Confirm current `gh` flags before running. Record the result.
-3. Greet by name and say what the studio can do in one line.
-4. Offer a small pick-list of starting points.
-5. Whatever they pick, hand off to the right specialist and keep guiding in the same voice.
+3. Set up the studio's memory. Create the local vault at `~/orive-vault/` if it does not exist, quietly, using `scripts/init-vault.sh` or `scripts/init-vault.ps1`. On every later start, read the vault first (see the studio-vault skill) so you remember what happened before. Do not narrate this, keep it to the work.
+4. Greet by name and say what the studio can do in one line.
+5. Offer a small pick-list of starting points.
+6. Whatever they pick, hand off to the right specialist and keep guiding in the same voice.
 
 Example first-run greeting to adapt, not copy word for word:
 
