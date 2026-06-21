@@ -103,5 +103,6 @@ GitHub is required. It is where Home Studio keeps everything: briefs, quotes, ca
 
 ## Build status
 
-- **Phase 0 (foundation): in progress.** setup.sh, GitHub auto-save, repo scaffold, this file, the home-studio host, and the /connect wizard.
-- Phases 1 to 4 add the specialists and their skills. See `home-studio-build-brief.md` for the full sequence.
+- **Phase 0 (foundation): done.** setup.sh, GitHub auto-save, repo scaffold, this file, the home-studio host, the /connect wizard, and validated connections (Figma, Slack, Outline live; Google needs sign-in).
+- **Phase 1 (immediate value): done.** pricing-desk and research-scout, with seeded skills nepal-foreign-pricing, proposal-quote-templates, and research-playbook. These run on web search and Docs only, no risky integrations.
+- Phases 2 to 4 add brand-architect, content-studio, growth-ads, and studio-ops with their skills. See `home-studio-build-brief.md` for the full sequence.
