@@ -158,6 +158,11 @@ if have claude; then
   say "Adding the studio to Claude Code."
   claude plugin marketplace add bishrant-personal/orive-creative-studio >/dev/null 2>&1 || true
   claude plugin install orive-creative-studio@orive >/dev/null 2>&1 || say "If the studio does not appear, run: claude plugin install orive-creative-studio@orive"
+
+  # The design skill, for distinctive, non-template UI, web, and document design.
+  say "Adding the design skill."
+  claude plugin marketplace add anthropics/claude-plugins-official >/dev/null 2>&1 || true
+  claude plugin install frontend-design@claude-plugins-official >/dev/null 2>&1 || say "If the design skill does not appear, run: claude plugin install frontend-design@claude-plugins-official"
 fi
 
 # --- optional extras, only when asked ---

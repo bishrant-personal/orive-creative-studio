@@ -156,6 +156,13 @@ if (Have "claude") {
     claude plugin marketplace add bishrant-personal/orive-creative-studio | Out-Null
     claude plugin install orive-creative-studio@orive | Out-Null
   } catch { Say "If the studio does not appear, run: claude plugin install orive-creative-studio@orive" }
+
+  # The design skill, for distinctive, non-template UI, web, and document design.
+  Say "Adding the design skill."
+  try {
+    claude plugin marketplace add anthropics/claude-plugins-official | Out-Null
+    claude plugin install frontend-design@claude-plugins-official | Out-Null
+  } catch { Say "If the design skill does not appear, run: claude plugin install frontend-design@claude-plugins-official" }
 }
 
 # --- optional extras, only when asked ---

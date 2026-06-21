@@ -238,16 +238,17 @@ It sets up the tools the studio runs on, and skips any you already have. Each is
 | Node.js | the engine Claude Code and the helper tools run on |
 | git and the GitHub tool | save and back up your work, and sign you in once |
 | Claude Code | the studio's runtime, the thing you actually talk to |
-| Playwright Chromium | a private browser so Research and Content can open a live page and grab a screenshot |
+| Playwright Chromium | a private browser, so Research and Content can open a live page and grab a screenshot, and so designed documents render to crisp PDFs |
 | ffmpeg | video and audio: frame grabs, trimming, transcoding, and reading clip details |
 | ImageMagick | images: resize, convert, and build moodboard contact sheets |
 | pandoc | turns a brief into a polished document, like Word, slides, or HTML |
-| wkhtmltopdf | renders those documents into clean PDFs |
+| wkhtmltopdf | a fallback PDF maker for plain, text-only documents |
 | yt-dlp | pulls a reference clip so a specialist can study its pacing or look |
 | uv | runs local tool servers, like the Blender connector, the moment you add them |
-| The studio fonts | the curated set (Inter, Playfair Display, IBM Plex, and more) used for all design work |
+| The frontend-design skill | an official Claude Code plugin the studio adds, for distinctive, non-template UI, web, and document design |
+| The studio fonts | the curated set (Inter, Manrope, IBM Plex, and more) used for all design work |
 
-It uses the right installer for your machine (winget on Windows, Homebrew on macOS, apt on Linux). Docker, Python, and Bun are optional and only added if you ask with a flag. The full list, including the connect-only tools like Adobe and Higgsfield, is in `REQUIREMENTS.md`.
+It uses the right installer for your machine (winget on Windows, Homebrew on macOS, apt on Linux). Designed PDFs render through headless Chromium, the same browser the studio already installs, because it handles modern layouts, web fonts, and full-bleed covers that the older PDF maker cannot. Docker, Python, and Bun are optional and only added if you ask with a flag. The full list, including the connect-only tools like Adobe and Higgsfield, is in `REQUIREMENTS.md`.
 
 </details>
 

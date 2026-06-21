@@ -9,6 +9,10 @@ When a user says they want to make something, recommend the right creative tools
 
 The structured tool knowledge base is in `tools.json` in this folder. Read it first. It is seeded, tier-zero knowledge, so recommending tools needs no web search. Only search to confirm a repo, installer, or MCP URL has changed, and refresh quarterly.
 
+## The design skill, always on for visual work
+
+For any UI, web page, app screen, microsite, or HTML deliverable, the studio leans on the `frontend-design` skill (an official Claude Code plugin installed at setup, `frontend-design@claude-plugins-official`). It is the studio's bar for distinctive, non-template design: deliberate type, a real aesthetic point of view, and layouts that do not read as generated. Load it before building any on-screen interface. The apps below make the asset; `frontend-design` decides how it should look, and `document-design` handles documents and the HTML-to-PDF render path. If for any reason the plugin is not installed, offer to add it the same way as any other tool.
+
 ## How to recommend
 
 When the user describes what they want to make:
