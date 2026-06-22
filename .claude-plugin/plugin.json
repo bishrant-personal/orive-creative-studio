@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "orive-creative-studio",
   "displayName": "Orive Creative Studio",
-  "description": "A friendly creative studio that runs on Claude Code. Talk in plain words and the right specialist does the work: brand, content, ads, pricing, research, video, copy, and hospitality.",
+  "description": "A friendly creative studio that runs on Claude Code. Talk in plain words and the right specialist does the work: brand, content, ads, pricing, research, video, copy, hospitality, and fashion. A built-in analyst diagnoses tricky problems and picks the approach, it recommends and installs the right creative tools, and it talks in a personality you choose.",
   "author": {
     "name": "Bishrant Tandukar",
     "url": "https://www.bishrant.com/"

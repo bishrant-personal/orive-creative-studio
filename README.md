@@ -36,7 +36,7 @@ A whole creative team in one place. Say what you want in plain words, and the ho
 | 📱 Content | content, posts, reels, captions, calendar | social content, reels, carousels, posting calendars |
 | 📈 Growth | ads, campaign, metrics, why is it not working | paid ads, campaign structure, reading the numbers |
 | 💰 Pricing | price, quote, invoice, proposal, rate | quotes, proposals, rate cards, invoicing |
-| 🔍 Research | research, market, competitors, audience | scoping, competitor scans, audience discovery |
+| 🔍 Research | research, market, why is it not working, prioritize, figure out | the studio's analyst: scoping, competitor scans, audience research, and diagnosing a tricky problem then recommending the approach and crew |
 | 🗂️ Studio Ops | schedule, file, save, handover | scheduling, filing, tracking, handovers |
 
 **🎬 The creative crew**
@@ -65,9 +65,10 @@ Plus the host, **Orive**, who greets you, picks the right specialist, and runs a
 
 | Feature | What it gives you |
 |---|---|
-| 15 specialists | a full creative team: brand, content, growth, pricing, research, ops, the creative crew, hospitality, and fashion |
+| 14 specialists | a full creative team: brand, content, growth, pricing, research, ops, the creative crew, hospitality, and fashion |
 | One host, one voice | Orive greets you, routes to the right specialist, and runs a small crew when a job needs several |
-| Pick a personality | choose The Director, The Sage, The Bestie, or Straight Shooter. The tone changes, the quality never does |
+| Pick a personality | the first time you open it, it asks how you want it to talk: The Director, The Sage, The Bestie, Straight Shooter, or plain. Change it any time. The tone changes, the quality never does |
+| A built-in analyst | for a tricky or tangled problem, it diagnoses the real issue, picks the right method (root cause, prioritization, creative, or improvement, 20 in all, from Ishikawa to DMAIC), and recommends the approach and the crew |
 | Real professional minds | each specialist thinks with real craft frameworks, not generic answers |
 | Tool recommendation and setup | it suggests the right creative tool for your task and installs or connects it, with real links |
 | A local memory vault | it remembers past sessions, the tools you used, and the cost, and saves replayable recipes of how work was made |
@@ -137,7 +138,7 @@ Choose how the studio talks to you. The tone changes, the quality of the work ne
 - **The Bestie**, warm and funny, has your back.
 - **Straight Shooter**, no nonsense, but it teaches.
 
-Keep it plain if you like, or nudge it any time with something like "less sass today."
+The studio asks which one you want the first time you open it, so it talks your way from the start. Keep it plain if you like, change it any time, or nudge it live with something like "less sass today."
 
 ---
 
@@ -248,7 +249,7 @@ It sets up the tools the studio runs on, and skips any you already have. Each is
 | The frontend-design skill | an official Claude Code plugin the studio adds, for distinctive, non-template UI, web, and document design |
 | The studio fonts | the curated set (Inter, Manrope, IBM Plex, and more) used for all design work |
 
-It uses the right installer for your machine (winget on Windows, Homebrew on macOS, apt on Linux). Designed PDFs render through headless Chromium, the same browser the studio already installs, because it handles modern layouts, web fonts, and full-bleed covers that the older PDF maker cannot. Docker, Python, and Bun are optional and only added if you ask with a flag. The full list, including the connect-only tools like Adobe and Higgsfield, is in `REQUIREMENTS.md`.
+It uses the right installer for your machine (winget on Windows, Homebrew on macOS, apt on Linux). Designed PDFs render through headless Chromium, the same browser the studio already installs, because it handles modern layouts, web fonts, and full-bleed covers that the older PDF maker cannot. Docker, Python, and Bun are optional and only added if you ask with a flag. CapCut video editing connects through its own tool server and installs on request with the `-WithCapCut` flag on Windows or `--with-capcut` on macOS and Linux. The full list, including the connect-only tools like Adobe and Higgsfield, is in `REQUIREMENTS.md`.
 
 </details>
 
