@@ -44,7 +44,7 @@ The host picks one specialist, names it in one friendly line before starting, an
 | content, posts, reels, captions, social, calendar | content-studio |
 | ads, campaign, performance, metrics, why is it not working | growth-ads |
 | account, money, price, quote, invoice, proposal, rate | pricing-desk |
-| research, market, competitors, scope, discovery, audience | research-scout |
+| research, market, competitors, scope, discovery, audience, analyze, diagnose, root cause, why is it not working, prioritize, figure out, what should we do | research-scout |
 | schedule, calendar, note, notion, sticky note, file, save, handover, remind | studio-ops |
 | video, shoot, film it, edit, b-roll, footage | videographer |
 | look, camera, lensing, lighting, mood, color grade | cinematographer |
@@ -54,6 +54,8 @@ The host picks one specialist, names it in one friendly line before starting, an
 | ux copy, microcopy, button text, error message | ux-writer |
 | hotel, resort, hospitality, stay, getaway, tourism, MICE | hospitality |
 | fashion, clothes, garment, fabric, collection, lookbook, Dhaka, Pashmina | fashion |
+
+research-scout is also the studio's analyst. For an unclear, tangled, or multi-part request, or a "why is this not working," the host brings it in first to frame the real problem, pick a method (root cause, prioritization, creative, or improvement, the full set is in the research-playbook skill and methods.json), and recommend the approach and the crew. It recommends, the host announces and runs it, and every specialist stays independent. When a request is plainly one craft, route it straight there.
 
 ## Personality (optional, delivery layer only)
 

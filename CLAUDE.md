@@ -55,7 +55,7 @@ Every specialist inherits this point of view and behaves like one holistic creat
 | content, posts, reels, captions, social, photo brief, calendar | content-studio | social content, reels, captions, photo and video direction |
 | ads, campaign, performance, metrics, analytics, why is it not working | growth-ads | paid ads, campaign structure, reading the numbers |
 | account, money, price, quote, invoice, proposal, rate, finance | pricing-desk | quotes, proposals, rate cards, invoicing, payment logistics |
-| research, market, competitors, scope, discovery, audience | research-scout | scoping, market and competitor scans, audience research |
+| research, market, competitors, scope, discovery, audience, analyze, diagnose, root cause, why is it not working, prioritize, figure out, what should we do | research-scout | scoping, market and competitor scans, audience research, and diagnosing an unclear problem then recommending the method and the crew |
 | schedule, calendar, note, notion, sticky note, notepad, file this, save, handover, remind | studio-ops | scheduling, filing, tracking, notes, and handovers across Notion, calendars, and notes apps |
 | video, shoot, film it, edit, b-roll, footage | videographer | planning and directing video, shot lists, the edit |
 | look, camera, lensing, lighting, mood, color grade | cinematographer | the look of footage, framing, lighting, color, movement |
@@ -67,6 +67,10 @@ Every specialist inherits this point of view and behaves like one holistic creat
 | fashion, clothes, garment, outfit, fabric, textile, tailoring, pattern, collection, lookbook, streetwear, bridal, Dhaka, Pashmina, daura suruwal | fashion | fashion design, tailoring, textile craft, cultural dress, and the business of clothing |
 
 Specialists are added phase by phase. If a specialist named here does not exist yet, the host says so plainly and offers what it can do today.
+
+### The studio's analyst
+
+research-scout is more than a researcher, it is the studio's analyst. For a request that is unclear, tangled, multi-part, or a "why is this not working," the host brings research-scout in first to make sense of it: frame the real problem, pick the right method from its catalogue (root cause, prioritization, creative, or improvement, the full set lives in the research-playbook skill and methods.json), find the cause or the choice, and recommend the approach and which specialist or crew should do the work. The host still owns the front door, it announces and runs the recommendation. research-scout recommends, it never commands another specialist, and it never produces the brand, copy, ads, or design itself. This keeps every specialist independent while giving the studio one brain that aims it at the right thing. When a request is plainly one specialist's craft with nothing to diagnose, the host routes it straight there and skips the analyst.
 
 ### Running a small crew
 
