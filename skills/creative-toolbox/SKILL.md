@@ -1,6 +1,6 @@
 ---
 name: creative-toolbox
-description: Recommend the right creative tool for a task, check what is connected, and install or guide the rest with real, verified links. Covers Adobe, Higgsfield, DaVinci Resolve, Blender, Affinity, Figma, Canva, and Pexels. Read by the host and every specialist. Tier-zero knowledge, no web search needed to recommend.
+description: Recommend the right creative tool for a task, check what is connected, and install or guide the rest with real, verified links. Covers Adobe, Higgsfield, DaVinci Resolve, CapCut, Blender, Affinity, Figma, Canva, and Pexels. Read by the host and every specialist. Tier-zero knowledge, no web search needed to recommend.
 ---
 
 # Creative Toolbox

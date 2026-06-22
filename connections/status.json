@@ -57,6 +57,14 @@
       "required": false,
       "last_validated": null
     },
+    "capcut": {
+      "connected": false,
+      "method": "Community MCP, the VectCutAPI stdio server, plus CapCut installed locally",
+      "scope": "build and edit CapCut draft projects programmatically",
+      "required": false,
+      "last_validated": null,
+      "detail": "Used by videographer, content-studio, and cinematographer. No official CapCut MCP exists; VectCutAPI (formerly CapCutAPI) is the community engine. Run the creative-toolbox install when a task needs it: clone sun-guannan/VectCutAPI, make a Python venv, add the stdio server to .mcp.json. Requires CapCut or Jianying and FFmpeg installed."
+    },
     "meta_ads": {
       "connected": false,
       "method": "Official Meta Ads MCP via OAuth",

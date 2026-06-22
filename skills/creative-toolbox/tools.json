@@ -127,13 +127,36 @@
       "best_for": ["stock assets", "royalty-free photos", "royalty-free video"],
       "link": "https://www.pexels.com/api/",
       "status_key": "pexels"
+    },
+    {
+      "id": "capcut",
+      "name": "CapCut",
+      "type": "community MCP",
+      "location": "local, needs CapCut or Jianying (CapCut International) installed",
+      "install": {
+        "method": "clone_and_config",
+        "steps": "Clone sun-guannan/VectCutAPI, make a Python 3.10 plus venv, pip install -r requirements-mcp.txt, then add the stdio MCP server to .mcp.json with command python, args mcp_server.py, and cwd set to the cloned folder. Needs FFmpeg on PATH.",
+        "command_claude_code": "git clone https://github.com/sun-guannan/VectCutAPI && cd VectCutAPI && python -m venv venv-capcut && venv-capcut/Scripts/activate && pip install -r requirements-mcp.txt",
+        "mcp_entry": {
+          "command": "python",
+          "args": ["mcp_server.py"],
+          "cwd": "<absolute path to the cloned VectCutAPI folder>"
+        }
+      },
+      "requires": "CapCut or Jianying installed, Python 3.10 plus, FFmpeg on PATH",
+      "best_for": ["video edit", "captions and subtitles", "social video", "talking head", "draft assembly"],
+      "capabilities": "Builds CapCut draft projects programmatically: video, audio, and image tracks, text and captions, transitions, effects, and animations, then opens the draft in CapCut to finish and export.",
+      "pairs_with": ["videographer", "content-studio", "cinematographer"],
+      "maturity": "community, no official CapCut MCP exists. VectCutAPI (formerly CapCutAPI) is the established engine and ships its own stdio MCP server. For a richer Claude Code layer with presets and talking-head workflows, MigueDuque/capcut-mcp-server-extended adds a TypeScript MCP on top of the same VectCutAPI backend.",
+      "link": "https://github.com/sun-guannan/VectCutAPI",
+      "status_key": "capcut"
     }
   ],
   "task_map": {
     "photo edit": ["adobe", "affinity"],
     "image generation": ["higgsfield", "adobe"],
     "video generation": ["higgsfield"],
-    "video edit": ["davinci-resolve", "adobe"],
+    "video edit": ["davinci-resolve", "adobe", "capcut"],
     "3d": ["blender"],
     "design ui": ["figma"],
     "web": ["figma"],
