@@ -134,16 +134,14 @@
       "type": "community MCP",
       "location": "local, needs CapCut or Jianying (CapCut International) installed",
       "install": {
-        "method": "clone_and_config",
-        "steps": "Clone sun-guannan/VectCutAPI, make a Python 3.10 plus venv, pip install -r requirements-mcp.txt, then add the stdio MCP server to .mcp.json with command python, args mcp_server.py, and cwd set to the cloned folder. Needs FFmpeg on PATH.",
-        "command_claude_code": "git clone https://github.com/sun-guannan/VectCutAPI && cd VectCutAPI && python -m venv venv-capcut && venv-capcut/Scripts/activate && pip install -r requirements-mcp.txt",
-        "mcp_entry": {
-          "command": "python",
-          "args": ["mcp_server.py"],
-          "cwd": "<absolute path to the cloned VectCutAPI folder>"
-        }
+        "method": "install_script",
+        "steps": "Run the studio's CapCut installer, which clones sun-guannan/VectCutAPI into vendor/ (gitignored), builds a Python venv, installs the parts, and uses the capcut server already wired in .mcp.json. Needs CapCut and FFmpeg installed.",
+        "command_claude_code": "powershell -ExecutionPolicy Bypass -File scripts/install-capcut.ps1",
+        "command_posix": "bash scripts/install-capcut.sh",
+        "via_setup": "setup.ps1 -WithCapCut  (Windows) or  bash setup.sh --with-capcut  (macOS or Linux)"
       },
-      "requires": "CapCut or Jianying installed, Python 3.10 plus, FFmpeg on PATH",
+      "installed": true,
+      "requires": "CapCut installed, Python 3.10 plus, FFmpeg on PATH",
       "best_for": ["video edit", "captions and subtitles", "social video", "talking head", "draft assembly"],
       "capabilities": "Builds CapCut draft projects programmatically: video, audio, and image tracks, text and captions, transitions, effects, and animations, then opens the draft in CapCut to finish and export.",
       "pairs_with": ["videographer", "content-studio", "cinematographer"],

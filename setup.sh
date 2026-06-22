@@ -16,12 +16,14 @@ CHECK_ONLY="no"
 WITH_DOCKER="no"
 WITH_PYTHON="no"
 WITH_BUN="no"
+WITH_CAPCUT="no"
 for arg in "$@"; do
   case "$arg" in
     --check)        CHECK_ONLY="yes" ;;
     --with-docker)  WITH_DOCKER="yes" ;;
     --with-python)  WITH_PYTHON="yes" ;;
     --with-bun)     WITH_BUN="yes" ;;
+    --with-capcut)  WITH_CAPCUT="yes" ;;
   esac
 done
 
@@ -175,6 +177,11 @@ fi
 if [ "$WITH_BUN" = "yes" ]; then
   # Bun is needed only by the Affinity MCP connector.
   if have bun; then say "Bun is already here."; else say "Installing Bun."; curl -fsSL https://bun.sh/install | bash || say "Bun is optional, see bun.sh."; fi
+fi
+if [ "$WITH_CAPCUT" = "yes" ]; then
+  # CapCut video editing through the VectCutAPI MCP. Needs Python and CapCut installed.
+  if ! have python3; then say "Installing Python."; pm_install python3 || say "Please install Python 3 from python.org."; fi
+  bash "$(dirname "$0")/scripts/install-capcut.sh" || say "CapCut setup did not finish. You can run scripts/install-capcut.sh anytime."
 fi
 
 say "All set."

@@ -9,7 +9,8 @@ param(
   [switch]$CheckOnly,
   [switch]$WithDocker,
   [switch]$WithPython,
-  [switch]$WithBun
+  [switch]$WithBun,
+  [switch]$WithCapCut
 )
 
 $ErrorActionPreference = "Stop"
@@ -175,6 +176,11 @@ if ($WithPython) {
 if ($WithBun) {
   # Bun is needed only by the Affinity MCP connector.
   if (Have "bun") { Say "Bun is already here." } else { Winget-Install "Oven-sh.Bun" "Bun" }
+}
+if ($WithCapCut) {
+  # CapCut video editing through the VectCutAPI MCP. Needs Python and CapCut installed.
+  if (-not (Have "python")) { Winget-Install "Python.Python.3.12" "Python" ; Refresh-Path }
+  try { & (Join-Path $PSScriptRoot "scripts\install-capcut.ps1") } catch { Say "CapCut setup did not finish. You can run scripts\install-capcut.ps1 anytime." }
 }
 
 Refresh-Path

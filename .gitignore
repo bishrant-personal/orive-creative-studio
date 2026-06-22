@@ -23,3 +23,8 @@ npm-debug.log*
 # Generated working files we do not want in history
 outputs/**/tmp/
 *.tmp
+
+# Vendored third-party MCP backends (cloned and built by scripts/install-capcut).
+# The clone and its Python venv are large and machine-specific, so they are not
+# committed. scripts/install-capcut reproduces them from the pinned source repo.
+vendor/

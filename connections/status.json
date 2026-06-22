@@ -58,12 +58,12 @@
       "last_validated": null
     },
     "capcut": {
-      "connected": false,
-      "method": "Community MCP, the VectCutAPI stdio server, plus CapCut installed locally",
+      "connected": true,
+      "method": "Community MCP, the VectCutAPI stdio server in .mcp.json as capcut, plus CapCut installed locally",
       "scope": "build and edit CapCut draft projects programmatically",
       "required": false,
-      "last_validated": null,
-      "detail": "Used by videographer, content-studio, and cinematographer. No official CapCut MCP exists; VectCutAPI (formerly CapCutAPI) is the community engine. Run the creative-toolbox install when a task needs it: clone sun-guannan/VectCutAPI, make a Python venv, add the stdio server to .mcp.json. Requires CapCut or Jianying and FFmpeg installed."
+      "last_validated": "2026-06-22",
+      "detail": "Used by videographer, content-studio, and cinematographer. No official CapCut MCP exists; VectCutAPI (formerly CapCutAPI) is the community engine. Installed via scripts/install-capcut into vendor/VectCutAPI (gitignored) with its own Python venv; the engine loaded with all 11 tools. To reproduce on another machine run scripts/install-capcut.ps1 (Windows) or scripts/install-capcut.sh (macOS or Linux), or setup with -WithCapCut. Requires CapCut and FFmpeg installed. On Windows, Smart App Control may block a fresh library on first run, then allow it."
     },
     "meta_ads": {
       "connected": false,
